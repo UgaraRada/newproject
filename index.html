@@ -1,185 +1,207 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Device</title>
-  </head>
-  <body>
-    <header class="main_header">
-      <!-- Вложенные теги лучше на отдельную строчку переносить, их так виднее,
-      текст выносить не обязательно -->
-      <a class="main_header_logo"><img src="#"/></a>
-      <div class="main_header_top">
-        <input type="text" class="main_header_top_search" value="Поиск по сайту" />
-        <ul class="main_header_top_userblock">
-          <li>
-            <a class="login " href="#">Войти</a>
-          </li>
-          <li>
-            <a class="compare" href="#">Сравнить</a>
-          </li>
-          <li>
-            <a class="basket" href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Device</title>
+    </head>
+    <body>
+        <header class="main_header">
+            <a class="main_header_logo">
+                <img src="#" />
+            </a>
+            <div class="main_header_top">
+                <input type="text" class="main_header_top_search" value="Поиск по сайту" />
+                <ul class="main_header_top_userblock">
+                    <li>
+                        <a class="login " href="#">Войти</a>
+                    </li>
+                    <li>
+                        <a class="compare" href="#">Сравнить</a>
+                    </li>
+                    <li>
+                        <a class="basket" href="#">Корзина</a>
+                    </li>
+                </ul>
+            </div>
 
-      <div class="main_header_bottom">
-        <!-- единообразие - это важно. Посмотри на список наверху, и на замечание еще выше -->
-        <a class="catalog" href="#">Каталог товаров</a>
-        <ul class="main_navigation">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </div>
-    </header>
-    <main class="container">
-      <div class="block_01">
-        <img src="#" width="#" height="#" />
-        <span class="description_slogan">
-          Делай селфи, как Бен Стиллер!
-        </span>
-        <p class="description_text">
-          Самая длинная палка доступная в нашем магазине. Восемь(Восемь, Карл!) метров длинной и весом всего 5 кг.
-        </p>
-        <!-- с work-link прикольно, что ты заметил, что это одинаковые компоненты с одним классом -->
-        <a class="block_01_link work_link" href="#">Подробнее</a>
-        <!-- Три точки на макете это тоже три дива, но пока забей хуй, просто имей ввиду -->
-        <ul class="characteristic">
-          <li>
-            <p class="characteristic_value">8,5 м</p>
-            <p class="characteristic_text">Длина палки</p>
-          </li>
-          <li>
-            <p class="characteristic_value">5 кг</p>
-            <p class="characteristic_text">Вес палки</p>
-          </li>
-          <li>
-            <p class="characteristic_value">Карбон</p>
-            <p class="characteristic_text">Материал</p>
-          </li>
-        </ul>
-      </div>
+            <div class="main_header_bottom">
+                <a class="catalog" href="#">Каталог товаров</a>
+                <ul class="main_navigation">
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантия</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="container">
+            <div class="block_01">
+                <img src="#" width="#" height="#" />
+                <span class="description_slogan">
+                    Делай селфи, как Бен Стиллер!
+                </span>
+                <p class="description_text">
+                    Самая длинная палка доступная в нашем магазине. Восемь(Восемь, Карл!) метров
+                    длинной и весом всего 5 кг.
+                </p>
 
-      <ul class="devices">
-        <li>
-          <a href="#" class="devices_link"> Виртуальная реальность</a>
-        </li>
-        <li>
-          <a href="#" class="devices_link">Моноподы для селфи</a>
-        </li>
-        <li>
-          <a href="#" class="devices_link">Экшн-камеры</a>
-        </li>
-        <li>
-          <a href="#" class="devices_link">Фитнес-браслеты</a>
-        </li>
-        <li>
-          <a href="#" class="devices_link">Умные часы</a>
-        </li>
-        <li>
-          <a href="#" class="devices_link">Квадракоптеры</a>
-        </li>
-      </ul>
+                <a class="block_01_link work_link" href="#">Подробнее</a>
 
-      <div class="services">
-        <ul class="services_link">
-          <li>
-            <a href="#" class="work_lin">Доставка</a>
-          </li>
-          <li>
-            <a href="#" class="work_link">Гарантия</a>
-          </li>
-          <!-- а единообразие? как ты это делаешь ) -->
-          <li><a href="#" class="work_link">Кредит</a></li>
-        </ul>
-        <h2 class="delivery">Доставка</h2>
-        <p class="delivery_text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бессплатно! Ведь мы неплохо заработаем, поднимая его на
-          ваш этаж.
-        </p>
-      </div>
-      <!-- то же самое, что и в первом замечании и с единообразием -->
-      <ul class="companies">
-        <li><img src="#" /></li>
-        <li><img src="#" /></li>
-        <li><img src="#" /></li>
-        <li><img src="#" /></li>
-      </ul>
-      <div class="store_info">
-        <div class="store_info about_us">
-          <h2 class="about_us header">О нас</h2>
-          <!-- здесь по идее список лишний, иначе любая книга была бы списоком абзацев -->
-          <ul class="about_us">
-            <li>
-              <p class="about_us">
-                Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас
-              </p>
-            </li>
-            <li>
-              <!-- если наверху у абзаца есть класс, то ты его стилизуешь
-                 А с этим абзацем что делать будешь? -->
-              <p>
-                Мы можем доставить товар в саммые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
-              </p>
-            </li>
-          </ul>
-          <ul class="about_us trans_company">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="about_us work_link" href="#">подробнее о нас</a>
-        </div>
-        <div class="contacts">
-          <h2 class="contacts header">Контакты</h2>
-          <p class="contacts_text">
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-          </p>
-          <img src="#" />
-          <a class="contacts work_link" href="#">напишите нам</a>
-        </div>
-      </div>
-    </main>
-    <footer class="main_footer">
-      <div class="main_footer_top">
-        <!-- вложенные теги вынеси -->
-        <a class="logo_2"><img src="#"/></a>
-        <ul class="main_footer_top_link">
-          <li><a class="login" href="#">Войти</a></li>
-          <li><a class="compare" href="#">Сравнить</a></li>
-          <li><a class="basket" href="#">Корзина</a></li>
-        </ul>
-      </div>
-      <div class="main_footer_center">
-        <span class="main_footer_center_adress">г.Москва, ул. Строителей, 15</span>
-        <ul class="main_footer_center_navigation">
-          <!-- ну как так -->
-          <li>
-            <a href="#" class="center_navigation_link">Доставка</a>
-          </li>
-          <li><a href="#" class="center_navigation_link">Гарантия</a></li>
-          <li><a href="#" class="center_navigation_link">Контакты</a></li>
-        </ul>
-        <span class="center_navigation_number">Тел.:+7(495)495-95-95</span>
-      </div>
-      <div class="main_footer_bottom">
-        <!-- желтая черта тоже див, элементы не появляются из воздуха -->
-        <ul class="main_footer_bottom_social">
-          <li class="social_link">
-            <a href="#" class="fb">facebook</a>
-          </li>
-          <li class="social_link">
-            <a href="#" class="inst">instagram</a>
-          </li>
-          <li class="social_link">
-            <a href="#" class="tw">twitter</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+                <ul class="characteristic">
+                    <li>
+                        <p class="characteristic_value">8,5 м</p>
+                        <p class="characteristic_text">Длина палки</p>
+                    </li>
+                    <li>
+                        <p class="characteristic_value">5 кг</p>
+                        <p class="characteristic_text">Вес палки</p>
+                    </li>
+                    <li>
+                        <p class="characteristic_value">Карбон</p>
+                        <p class="characteristic_text">Материал</p>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="devices">
+                <li>
+                    <a href="#" class="devices_link"> Виртуальная реальность</a>
+                </li>
+                <li>
+                    <a href="#" class="devices_link">Моноподы для селфи</a>
+                </li>
+                <li>
+                    <a href="#" class="devices_link">Экшн-камеры</a>
+                </li>
+                <li>
+                    <a href="#" class="devices_link">Фитнес-браслеты</a>
+                </li>
+                <li>
+                    <a href="#" class="devices_link">Умные часы</a>
+                </li>
+                <li>
+                    <a href="#" class="devices_link">Квадракоптеры</a>
+                </li>
+            </ul>
+
+            <div class="services">
+                <ul class="services_link">
+                    <li>
+                        <a href="#" class="work_lin">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#" class="work_link">Гарантия</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="work_link">Кредит</a>
+                    </li>
+                </ul>
+                <h2 class="delivery">Доставка</h2>
+                <p class="delivery_text">
+                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                    бессплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+            </div>
+
+            <ul class="companies">
+                <li>
+                    <img src="#" />
+                </li>
+                <li>
+                    <img src="#" />
+                </li>
+                <li>
+                    <img src="#" />
+                </li>
+                <li>
+                    <img src="#" />
+                </li>
+            </ul>
+            <div class="store_info">
+                <div class="store_info about_us">
+                    <h2 class="about_us header">О нас</h2>
+
+                    <p class="about_us">
+                        Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом
+                        из нас
+                    </p>
+
+                    <p class="about_us">
+                        Мы можем доставить товар в саммые отдаленные точки России! DEVICE работает
+                        со многими транспортными компаниями:
+                    </p>
+
+                    <ul class="about_us trans_company">
+                        <li>Деловые линии</li>
+                        <li>Автотрейдинг</li>
+                        <li>ЖелДорЭкспедиция</li>
+                    </ul>
+                    <a class="about_us work_link" href="#">подробнее о нас</a>
+                </div>
+                <div class="contacts">
+                    <h2 class="contacts header">Контакты</h2>
+                    <p class="contacts_text">
+                        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+                        проверить работоспособность покупки. Всякое бывает.
+                    </p>
+                    <img src="#" />
+                    <a class="contacts work_link" href="#">напишите нам</a>
+                </div>
+            </div>
+        </main>
+        <footer class="main_footer">
+            <div class="main_footer_top">
+                <a class="logo_2"><img src="#"/></a>
+                <ul class="main_footer_top_link">
+                    <li>
+                        <a class="login" href="#">Войти</a>
+                    </li>
+                    <li>
+                        <a class="compare" href="#">Сравнить</a>
+                    </li>
+                    <li>
+                        <a class="basket" href="#">Корзина</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main_footer_center">
+                <span class="main_footer_center_adress">г.Москва, ул. Строителей, 15</span>
+                <ul class="main_footer_center_navigation">
+                    <li>
+                        <a href="#" class="center_navigation_link">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#" class="center_navigation_link">Гарантия</a>
+                    </li>
+                    <li>
+                        <a href="#" class="center_navigation_link">Контакты</a>
+                    </li>
+                </ul>
+                <span class="center_navigation_number">Тел.:+7(495)495-95-95</span>
+            </div>
+            <div class="main_footer_bottom">
+                <div class="style_line"></div>
+
+                <ul class="main_footer_bottom_social">
+                    <li class="social_link">
+                        <a href="#" class="fb">facebook</a>
+                    </li>
+                    <li class="social_link">
+                        <a href="#" class="inst">instagram</a>
+                    </li>
+                    <li class="social_link">
+                        <a href="#" class="tw">twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
