@@ -22,7 +22,23 @@ body {
     font-family: Gilroy;
 }
 
+.contacts header {
+    font-size: 47px;
+    line-height: auto;
+    color: black;
+    font-weight: ExtraBold;
+    font-family: Gilroy;
+}
+
 .filter_head {
+    font-size: 16px;
+    line-height: auto;
+    color: black;
+    font-weight: ExtraBold;
+    font-family: Gilroy;
+}
+
+.sorting_parameter_header {
     font-size: 16px;
     line-height: auto;
     color: black;
