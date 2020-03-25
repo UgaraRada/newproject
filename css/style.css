@@ -45,3 +45,23 @@ body {
     font-weight: ExtraBold;
     font-family: Gilroy;
 }
+
+.main_header_logo {
+    font-size: 48px;
+    line-height: auto;
+    color: black;
+    font-weight: ExtraBold;
+    font-family: Gilroy;
+    
+}
+
+.logo_2 {
+    font-size: 48px;
+    line-height: auto;
+    color: rgb(255,198,0);
+    font-weight: ExtraBold;
+    font-family: Gilroy;
+    
+}
+
+
