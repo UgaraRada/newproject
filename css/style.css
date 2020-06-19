@@ -6,31 +6,12 @@ body {
   font-family: Open Sans;
 }
 
-/* зачем тебе три разных класса с одинаковыми стилями? */
-.delivery {
+.delivery,
+.about_us .header,
+.contacts .header,
+.filter_head  {
   font-size: 47px;
-  /* https://htmlacademy.ru/courses/43/run/14 */
-  /* http://htmlbook.ru/css/line-height - внимательно посмотри значения*/
-  line-height: auto;
-  color: black;
-  /* https://htmlacademy.ru/courses/43/run/3 */
-  /* http://htmlbook.ru/css/font-weight - внимательно посмотри значения */
-  font-weight: ExtraBold;
-  font-family: Gilroy;
-}
-
-.about_us .header {
-  font-size: 47px;
-  line-height: auto;
-  color: black;
-  font-weight: ExtraBold;
-  font-family: Gilroy;
-}
-
-/* в твоем случае header - это класс, а не тег, стили не поставились */
-.contacts header {
-  font-size: 47px;
-  line-height: auto;
+  line-height: normal;
   color: black;
   font-weight: ExtraBold;
   font-family: Gilroy;
@@ -38,32 +19,112 @@ body {
 
 .filter_head {
   font-size: 16px;
-  line-height: auto;
-  color: black;
-  font-weight: ExtraBold;
-  font-family: Gilroy;
+
 }
 
 .sorting_parameter_header {
   font-size: 16px;
-  line-height: auto;
+  line-height: normal;
   color: black;
   font-weight: ExtraBold;
   font-family: Gilroy;
+  text-transform: uppercase;
 }
 
 .main_header_logo {
+  display: block;
   font-size: 48px;
-  line-height: auto;
+  line-height: normal;
   color: black;
   font-weight: ExtraBold;
   font-family: Gilroy;
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-top: -70px;
+  margin-bottom: 37px;
+  height: 48px;
+  border: 1px solid red;
+  
 }
 
 .logo_2 {
   font-size: 48px;
-  line-height: auto;
+  line-height: normal;
   color: rgb(255, 198, 0);
   font-weight: ExtraBold;
   font-family: Gilroy;
 }
+body {
+    width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main_header {
+    width: 1160px;
+    height: 299px;
+    background-color: rgb(247, 226, 150, 0.5);
+    margin-left: 140px;
+    margin-top: 40px;
+    padding-top: 40px;
+
+}
+
+.main_header_top {
+  width: 1040px;
+  margin-left: 60px;
+  margin-top: 0;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+
+}
+
+.m_h_t_left,
+.m_h_t_right,
+.m_h_b_left,
+.m_h_b_right {
+    width: 520px;
+}
+
+.main_header_top_userblock,
+.main_navigation {
+    display: flex;
+    list-style: none;
+
+       
+}
+
+.l_login {
+    margin-right: auto;
+}
+
+.l_compare,
+.l_basket {
+    margin-left: 17px;
+}
+
+.main_header_bottom {
+  width: 1040px;
+  margin-left: 60px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.link_navigation {
+    text-transform: uppercase;
+}
+
+.l_contaсs {
+    margin-left: auto;
+}
+
+.l_delivery,
+.l_guaranee {
+    margin-right: 39px;
+}
+
