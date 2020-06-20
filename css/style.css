@@ -1,58 +1,69 @@
 body {
-  font-size: 15px;
-  line-height: 30px;
-  color: black;
-  font-weight: light;
-  font-family: Open Sans;
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+    font-weight: light;
+    font-family: Open Sans;
 }
 
 .delivery,
 .about_us .header,
 .contacts .header,
-.filter_head  {
-  font-size: 47px;
-  line-height: normal;
-  color: black;
-  font-weight: ExtraBold;
-  font-family: Gilroy;
+.filter_head {
+    font-size: 47px;
+    line-height: normal;
+    color: black;
+    font-weight: ExtraBold;
+    font-family: Gilroy;
 }
 
 .filter_head {
-  font-size: 16px;
-
+    font-size: 16px;
 }
 
 .sorting_parameter_header {
-  font-size: 16px;
-  line-height: normal;
-  color: black;
-  font-weight: ExtraBold;
-  font-family: Gilroy;
-  text-transform: uppercase;
+    font-size: 16px;
+    line-height: normal;
+    color: black;
+    font-weight: ExtraBold;
+    font-family: Gilroy;
+    text-transform: uppercase;
 }
 
 .main_header_logo {
-  display: block;
-  font-size: 48px;
-  line-height: normal;
-  color: black;
-  font-weight: ExtraBold;
-  font-family: Gilroy;
-  text-transform: uppercase;
-  margin-left: 60px;
-  margin-top: -70px;
-  margin-bottom: 37px;
-  height: 48px;
-  border: 1px solid red;
-  
+    display: block;
+    font-size: 48px;
+    line-height: normal;
+    color: black;
+    font-weight: Bold;
+    font-family: Gilroy;
+    text-transform: uppercase;
+    margin-left: 60px;
+    margin-top: -70px;
+    margin-bottom: 37px;
+    height: 48px;
+    border: 1px solid red;
 }
 
 .logo_2 {
-  font-size: 48px;
-  line-height: normal;
-  color: rgb(255, 198, 0);
-  font-weight: ExtraBold;
-  font-family: Gilroy;
+    font-size: 48px;
+    line-height: normal;
+    color: rgb(255, 198, 0);
+    font-weight: ExtraBold;
+    font-family: Gilroy;
+}
+
+.headline {
+    font-size: 47px;
+    font-weight: bold;
+    font-family: Gilroy;
+}
+.work_link {
+    font-size: 18px;
+    font-weight: Bold;
+    font-family: Gilroy;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 body {
     width: 1440px;
@@ -66,21 +77,19 @@ a {
 .main_header {
     width: 1160px;
     height: 299px;
-    background-color: rgb(247, 226, 150, 0.5);
+    background-color: rgb(247, 226, 150);
     margin-left: 140px;
     margin-top: 40px;
     padding-top: 40px;
-
 }
 
 .main_header_top {
-  width: 1040px;
-  margin-left: 60px;
-  margin-top: 0;
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
-
+    width: 1040px;
+    margin-left: 60px;
+    margin-top: 0;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
 }
 
 .m_h_t_left,
@@ -94,8 +103,6 @@ a {
 .main_navigation {
     display: flex;
     list-style: none;
-
-       
 }
 
 .l_login {
@@ -108,15 +115,19 @@ a {
 }
 
 .main_header_bottom {
-  width: 1040px;
-  margin-left: 60px;
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
+    width: 1040px;
+    margin-left: 60px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
 }
 
 .link_navigation {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Gilroy;
+    letter-spacing: 0.2em;
 }
 
 .l_contaсs {
@@ -128,3 +139,143 @@ a {
     margin-right: 39px;
 }
 
+.preview_block {
+    width: 1160px;
+    height: 481px;
+    margin-left: 140px;
+    display: flex;
+}
+
+.preview_img,
+.description {
+    width: 580px;
+    border: 1px solid red;
+}
+
+.preview_img {
+    position: relative;
+}
+
+.preview_img img {
+    position: absolute;
+    top: -111px;
+    left: 90px;
+}
+
+.description_slogan {
+    border: 1px solid;
+    margin-top: -25px;
+    line-height: 40px;
+    padding-bottom: 0;
+}
+
+.description_control {
+    display: flex;
+    border: 1px solid green;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.description_link {
+    margin-left: 44px;
+    margin-right: 163px;
+}
+
+.descriptoin_button {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.descriptoin_button li {
+    margin: 0;
+    padding-left: 21px;
+}
+
+.characteristics {
+    display: flex;
+    list-style: none;
+    border: 1px solid green;
+    margin: 0;
+    padding: 0;
+    margin-top: 76px;
+}
+
+.characteristics li {
+    margin-right: 81px;
+}
+.characteristics li p {
+    margin: 0;
+}
+.characteristic_value {
+    font-size: 36px;
+    font-family: Gilroy;
+}
+
+.characteristic_text {
+    font-size: 13px;
+}
+
+.devices {
+    display: flex;
+    margin-left: 140px;
+    margin-right: 140px;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.devices_box {
+    width: 160px;
+    height: 160px;
+    background-color: rgb(247, 226, 150);
+    margin: 0;
+    padding: 0;
+}
+
+.devices_link {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gilroy;
+}
+
+.services {
+    width: 1445px;
+    height: 288px;
+    background-color: rgb(229, 229, 229);
+    margin-top: 146px;
+}
+
+.services_choice,
+.services_info {
+    display: inline-block;
+}
+
+.services_choice {
+    width: 425px;
+    margin: 0;
+    padding-top: 1px;
+}
+
+.services_link {
+    list-style: none;
+    display: block;
+    margin-left: 170px;
+    padding-left: 0;
+    margin-top: -16px;
+}
+
+.services_link li {
+    margin-bottom: 52px;
+}
+
+.services_info {
+    width: 1012px;
+    margin: 0;
+    border: 1px solid red;
+}
+
+.services_info_box {
+    width: 440px;
+    height: 160px;
+}

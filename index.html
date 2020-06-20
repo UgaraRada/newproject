@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="main_header">
-            <a class="main_header_logo">
+            <a class="main_header_logo" href="#">
                 device
             </a>
             <div class="main_header_top">
@@ -52,72 +52,138 @@
         </header>
         <main class="container">
             <div class="preview_block">
-                <img src="img/stick.png" width="384" height="486" />
-                <span class="description_slogan">
-                    Делай селфи, как Бен Стиллер!
-                </span>
-                <p class="description_text">
-                    Самая длинная палка доступная в нашем магазине. Восемь(Восемь, Карл!) метров
-                    длинной и весом всего 5 кг.
-                </p>
-
-                <a class="block_01_link work_link" href="#">Подробнее</a>
-
-                <ul class="characteristic">
-                    <li>
-                        <p class="characteristic_value">8,5 м</p>
-                        <p class="characteristic_text">Длина палки</p>
-                    </li>
-                    <li>
-                        <p class="characteristic_value">5 кг</p>
-                        <p class="characteristic_text">Вес палки</p>
-                    </li>
-                    <li>
-                        <p class="characteristic_value">Карбон</p>
-                        <p class="characteristic_text">Материал</p>
-                    </li>
-                </ul>
+                <div class="preview_img">
+                    <img src="img/stick.png" width="384" height="486" />
+                </div>
+                <div class="description">
+                    <div class="description_slogan">
+                        <span class="headline">
+                            Делай селфи, <br />
+                            как Бен Стиллер!
+                        </span>
+                    </div>
+                    <p class="description_text">
+                        Самая длинная палка для селфи доступна в нашем магазине.<br />
+                        Восемь(Восемь, Карл!) метров длинной и весом всего 5 килограмм.
+                    </p>
+                    <div class="description_control">
+                        <a class="description_link work_link" href="#">Подробнее</a>
+                        <ul class="descriptoin_button">
+                            <li>
+                                <input
+                                    name="preview_product"
+                                    type="radio"
+                                    value="selfi_stick"
+                                    checked
+                                />
+                            </li>
+                            <li>
+                                <input name="preview_product" type="radio" value="" />
+                            </li>
+                            <li>
+                                <input name="preview_product" type="radio" value="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="characteristics">
+                        <li>
+                            <p class="characteristic_value">8,5 м</p>
+                            <p class="characteristic_text">Длина палки</p>
+                        </li>
+                        <li>
+                            <p class="characteristic_value">5 кг</p>
+                            <p class="characteristic_text">Вес палки</p>
+                        </li>
+                        <li>
+                            <p class="characteristic_value">Карбон</p>
+                            <p class="characteristic_text">Материал</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <ul class="devices">
                 <li>
-                    <a href="#" class="devices_link"> Виртуальная реальность</a>
+                    <a href="#" class="devices_link">
+                        <div class="devices_box">
+                            <img
+                                class="devices_img"
+                                src="img/virtual_reality.png"
+                                width="97px"
+                                height="55px"
+                            />
+                        </div>
+                        Виртуальная <br />
+                        реальность</a
+                    >
                 </li>
                 <li>
-                    <a href="#" class="devices_link">Моноподы для селфи</a>
+                    <a href="#" class="devices_link">
+                        <div class="devices_box">
+                            <img src="" width="" height="" />
+                        </div>
+                        Моноподы <br />
+                        для селфи</a
+                    >
                 </li>
                 <li>
-                    <a href="#" class="devices_link">Экшн-камеры</a>
+                    <a href="#" class="devices_link">
+                        <div class="devices_box">
+                            <img src="" width="" height="" />
+                        </div>
+                        Экшн-камеры</a
+                    >
                 </li>
                 <li>
-                    <a href="#" class="devices_link">Фитнес-браслеты</a>
+                    <a href="#" class="devices_link">
+                        <div class="devices_box">
+                            <img src="" width="" height="" />
+                        </div>
+                        Фитнес-браслеты</a
+                    >
                 </li>
                 <li>
-                    <a href="#" class="devices_link">Умные часы</a>
+                    <a href="#" class="devices_link">
+                        <div class="devices_box">
+                            <img src="" width="" height="" />
+                        </div>
+                        Умные часы</a
+                    >
                 </li>
                 <li>
-                    <a href="#" class="devices_link">Квадракоптеры</a>
+                    <a href="#" class="devices_link">
+                        <div class="devices_box">
+                            <img src="" width="" height="" />
+                        </div>
+                        Квадракоптеры</a
+                    >
                 </li>
             </ul>
 
             <div class="services">
-                <ul class="services_link">
-                    <li>
-                        <a href="#" class="work_lin">Доставка</a>
-                    </li>
-                    <li>
-                        <a href="#" class="work_link">Гарантия</a>
-                    </li>
+                <div class="services_choice">
+                    <ul class="services_link">
+                        <li>
+                            <a href="#" class="work_link">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="work_link">Гарантия</a>
+                        </li>
 
-                    <li>
-                        <a href="#" class="work_link">Кредит</a>
-                    </li>
-                </ul>
-                <h2 class="delivery">Доставка</h2>
-                <p class="delivery_text">
-                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-                    бессплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-                </p>
+                        <li>
+                            <a href="#" class="work_link">Кредит</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="services_info">
+                    <div class="services_info_box">
+                        <h2 class="delivery">Доставка</h2>
+                        <p class="delivery_text">
+                            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                            бессплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <ul class="companies">
@@ -169,7 +235,7 @@
         </main>
         <footer class="main_footer">
             <div class="main_footer_top">
-                <a class="logo_2">device</a>
+                <a class="logo_2" href="#">device</a>
                 <ul class="main_footer_top_link">
                     <li>
                         <a class="login" href="#">Войти</a>
