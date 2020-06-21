@@ -4,74 +4,42 @@ body {
     color: black;
     font-weight: light;
     font-family: Open Sans;
+    width: 1440px;
 }
-
-.delivery,
-.about_us .header,
-.contacts .header,
-.filter_head {
-    font-size: 47px;
-    line-height: normal;
+a {
+    text-decoration: none;
     color: black;
-    font-weight: ExtraBold;
-    font-family: Gilroy;
 }
-
-.filter_head {
-    font-size: 16px;
-}
-
-.sorting_parameter_header {
-    font-size: 16px;
-    line-height: normal;
-    color: black;
-    font-weight: ExtraBold;
-    font-family: Gilroy;
-    text-transform: uppercase;
-}
-
-.main_header_logo {
-    display: block;
+.logo {
     font-size: 48px;
     line-height: normal;
-    color: black;
     font-weight: Bold;
     font-family: Gilroy;
     text-transform: uppercase;
-    margin-left: 60px;
-    margin-top: -70px;
-    margin-bottom: 37px;
-    height: 48px;
-    border: 1px solid red;
 }
-
-.logo_2 {
-    font-size: 48px;
-    line-height: normal;
-    color: rgb(255, 198, 0);
-    font-weight: ExtraBold;
-    font-family: Gilroy;
-}
-
-.headline {
+.heading {
     font-size: 47px;
+    color: black;
     font-weight: bold;
     font-family: Gilroy;
 }
 .work_link {
     font-size: 18px;
-    font-weight: Bold;
+    font-weight: bold;
     font-family: Gilroy;
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
-body {
-    width: 1440px;
-}
 
-a {
-    text-decoration: none;
+.main_header_logo {
+    display: block;
     color: black;
+    margin-left: 60px;
+    margin-top: -70px;
+    margin-bottom: 37px;
+    height: 48px;
+    width: 170px;
+    border: 1px solid red;
 }
 
 .main_header {
@@ -83,20 +51,23 @@ a {
     padding-top: 40px;
 }
 
-.main_header_top {
+.main_header_top,
+.main_header_bottom {
     width: 1040px;
     margin-left: 60px;
-    margin-top: 0;
     border: 1px solid red;
     display: flex;
     align-items: center;
 }
-
+.main_header_top {
+    margin-top: 0;
+}
 .m_h_t_left,
 .m_h_t_right,
 .m_h_b_left,
 .m_h_b_right {
     width: 520px;
+    border: 1px solid green;
 }
 
 .main_header_top_userblock,
@@ -105,21 +76,13 @@ a {
     list-style: none;
 }
 
-.l_login {
+.link_login {
     margin-right: auto;
 }
 
-.l_compare,
-.l_basket {
+.link_compare,
+.link_basket {
     margin-left: 17px;
-}
-
-.main_header_bottom {
-    width: 1040px;
-    margin-left: 60px;
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
 }
 
 .link_navigation {
@@ -130,12 +93,12 @@ a {
     letter-spacing: 0.2em;
 }
 
-.l_contaсs {
+.link_contaсs {
     margin-left: auto;
 }
 
-.l_delivery,
-.l_guaranee {
+.link_delivery,
+.link_guaranee {
     margin-right: 39px;
 }
 
@@ -214,12 +177,13 @@ a {
 
 .characteristic_text {
     font-size: 13px;
+    line-height: 33px;
 }
 
 .devices {
     display: flex;
     margin-left: 140px;
-    margin-right: 140px;
+    width: 1160px;
     list-style: none;
     justify-content: space-between;
     padding-left: 0;
@@ -229,8 +193,10 @@ a {
     width: 160px;
     height: 160px;
     background-color: rgb(247, 226, 150);
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
 }
 
 .devices_link {
@@ -244,38 +210,155 @@ a {
     height: 288px;
     background-color: rgb(229, 229, 229);
     margin-top: 146px;
-}
-
-.services_choice,
-.services_info {
-    display: inline-block;
-}
-
-.services_choice {
-    width: 425px;
-    margin: 0;
-    padding-top: 1px;
+    position: relative;
 }
 
 .services_link {
     list-style: none;
-    display: block;
-    margin-left: 170px;
+    position: absolute;
+    margin-left: 165px;
     padding-left: 0;
     margin-top: -16px;
+    border: 1px solid green;
 }
 
 .services_link li {
-    margin-bottom: 52px;
+    margin-bottom: 49px;
+    text-align: center;
 }
 
-.services_info {
-    width: 1012px;
+.services_delivery {
+    position: absolute;
+    width: 850px;
+    height: 280px;
     margin: 0;
-    border: 1px solid red;
+    padding: 0;
+    border: 1px solid green;
+    left: 546px;
+    top: -24px;
 }
 
-.services_info_box {
-    width: 440px;
-    height: 160px;
+.services_delivery h2 {
+    padding: 0;
+    margin-top: 0;
+    line-height: 38px;
+}
+
+.services_delivery img {
+    position: relative;
+    top: -180px;
+    left: 550px;
+}
+
+.companies {
+    width: 1160px;
+    height: 100px;
+    margin-left: 140px;
+    margin-top: 94px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;
+}
+
+.store_info {
+    width: 1160px;
+    height: 648px;
+    margin-left: 140px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.about_us,
+.contacts {
+    width: 580px;
+    height: 648px;
+    margin-top: 0px;
+    padding-top: 59px;
+}
+
+.about_us .heading,
+.contacts .heading {
+    margin-top: 0;
+}
+
+.trans_company {
+    padding-left: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gilroy;
+    margin-top: 50px;
+}
+
+.trans_company li {
+    margin-bottom: 20px;
+}
+.trans_company li:last-child {
+    margin-bottom: 0px;
+}
+.contacts img {
+    margin-top: 10px;
+}
+.about_us .work_link,
+.contacts .work_link {
+    display: block;
+    margin-top: 85px;
+}
+.main_footer {
+    width: 1440px;
+    height: 323px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: 1px solid rgb(70, 70, 70);
+}
+.main_footer a {
+    color: white;
+}
+
+.main_footer_align_box {
+    width: 1160px;
+    margin-left: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_footer_top {
+    height: 50px;
+    margin-top: 65px;
+}
+.main_footer_logo {
+    color: rgb(255, 198, 0) !important;
+}
+
+.main_footer_userblock,
+.main_footer_bottom_social {
+    list-style: none;
+}
+.main_footer_userblock li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.main_footer_center {
+    height: 24px;
+    margin-top: 35px;
+    border: 1px solid green;
+}
+.main_footer_navigation {
+    list-style: none;
+    display: flex;
+}
+.main_footer_navigation li {
+    margin-right: 38px;
+}
+.main_footer_bottom {
+    height: 40px;
+    margin-top: 70px;
+    border: 1px solid green;
+}
+.main_footer_bottom_social li {
+    display: inline-block;
+    margin-left: 22px;
 }
