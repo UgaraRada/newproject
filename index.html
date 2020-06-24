@@ -4,53 +4,54 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/index-style.css" rel="stylesheet" />
+        <link href="css/common-style.css" rel="stylesheet" />
         <title>Device</title>
     </head>
     <body>
+        <div class="container">
         <header class="main_header">
-            <a class="main_header_logo logo" href="#">
-                device
-            </a>
-            <div class="main_header_top">
-                <div class="m_h_t_left">
-                    <input type="text" class="main_header_top_search" value="Поиск по сайту" />
+                <a class="main_header_logo logo" href="#">
+                    device
+                </a>
+                <div class="main_header_top">
+                    <div class="m_h_t_left">
+                        <input type="text" class="main_header_top_search" value="Поиск по сайту" />
+                    </div>
+                    <div class="m_h_t_right">
+                        <ul class="main_header_top_userblock">
+                            <li class="link_user link_login">
+                                <a href="#">Войти</a>
+                            </li>
+                            <li class="link_user link_compare">
+                                <a href="#">Сравнить</a>
+                            </li>
+                            <li class="link_user link_basket">
+                                <a href="#">Корзина</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="m_h_t_right">
-                    <ul class="main_header_top_userblock">
-                        <li class="link_user link_login">
-                            <a href="#">Войти</a>
-                        </li>
-                        <li class="link_user link_compare">
-                            <a href="#">Сравнить</a>
-                        </li>
-                        <li class="link_user link_basket">
-                            <a href="#">Корзина</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="main_header_bottom">
-                <div class="m_h_b_left">
-                    <a class="link_navigation" href="#">Каталог товаров</a>
+                <div class="main_header_bottom">
+                    <div class="m_h_b_left">
+                        <a class="link_navigation" href="#">Каталог товаров</a>
+                    </div>
+                    <div class="m_h_b_right">
+                        <ul class="main_navigation">
+                            <li class="link_navigation link_delivery">
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li class="link_navigation link_guaranee">
+                                <a href="#">Гарантия</a>
+                            </li>
+                            <li class="link_navigation link_contaсs">
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="m_h_b_right">
-                    <ul class="main_navigation">
-                        <li class="link_navigation link_delivery">
-                            <a href="#">Доставка</a>
-                        </li>
-                        <li class="link_navigation link_guaranee">
-                            <a href="#">Гарантия</a>
-                        </li>
-                        <li class="link_navigation link_contaсs">
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <main class="container">
+            </header>  
             <div class="preview_block">
                 <div class="preview_img">
                     <img src="img/stick.png" width="384" height="486" />
@@ -58,12 +59,12 @@
                 <div class="description">
                     <div class="description_slogan">
                         <span class="heading">
-                            Делай селфи, <br />
+                            Делай селфи, 
                             как Бен Стиллер!
                         </span>
                     </div>
                     <p class="description_text">
-                        Самая длинная палка для селфи доступна в нашем магазине.<br />
+                        Самая длинная палка для селфи доступна в нашем магазине.
                         Восемь(Восемь, Карл!) метров длинной и весом всего 5 килограмм.
                     </p>
                     <div class="description_control">
@@ -103,9 +104,9 @@
             </div>
 
             <ul class="devices">
-                <li>
+                <li class="devices_boxes">
                     <a href="#" class="devices_link">
-                        <div class="devices_box">
+                        <div class="device_picture">
                             <img
                                 class="devices_img"
                                 src="img/virtual_reality.png"
@@ -113,77 +114,82 @@
                                 height="55px"
                             />
                         </div>
-                        Виртуальная <br />
+                        Виртуальная 
                         реальность</a
                     >
                 </li>
-                <li>
+                <li class="devices_boxes">
                     <a href="#" class="devices_link">
-                        <div class="devices_box">
+                        <div class="device_picture">
                             <img src="img/monopods for selfie.png" width="86" height="117" />
                         </div>
-                        Моноподы <br />
+                        Моноподы 
                         для селфи</a
                     >
                 </li>
-                <li>
+                <li class="devices_boxes">
                     <a href="#" class="devices_link">
-                        <div class="devices_box">
+                        <div class="device_picture">
                             <img src="img/action camera.png" width="71" height="87" />
                         </div>
                         Экшн-камеры</a
                     >
                 </li>
-                <li>
+                <li class="devices_boxes">
                     <a href="#" class="devices_link">
-                        <div class="devices_box">
+                        <div class="device_picture">
                             <img src="img/fitness bracelets.png" width="107" height="65" />
                         </div>
                         Фитнес-браслеты</a
                     >
                 </li>
-                <li>
+                <li class="devices_boxes">
                     <a href="#" class="devices_link">
-                        <div class="devices_box">
+                        <div class="device_picture">
                             <img src="img/smart watch.png" width="56" height="98" />
                         </div>
                         Умные часы</a
                     >
                 </li>
-                <li>
+                <li class="devices_boxes">
                     <a href="#" class="devices_link">
-                        <div class="devices_box">
+                        <div class="device_picture">
                             <img src="img/quadrocopters.png" width="132" height="69" />
                         </div>
                         Квадракоптеры</a
                     >
                 </li>
             </ul>
-
+        </div>
+    </div>
+        <div class="services_background">
             <div class="services">
-                <ul class="services_link">
+                <div class="services_box">
+                <ul class="services_links">
                     <li>
-                        <a href="#" class="work_link">Доставка</a>
+                        <a href="#" class="service_link work_link">Доставка</a>
                     </li>
                     <li>
-                        <a href="#" class="work_link">Гарантия</a>
+                        <a href="#" class="service_link work_link">Гарантия</a>
                     </li>
 
                     <li>
-                        <a href="#" class="work_link">Кредит</a>
+                        <a href="#" class="service_link work_link">Кредит</a>
                     </li>
-                </ul>
-
+                    </ul>
+                </div>
                 <div class="services_delivery">
-                    <h2 class="heading">Доставка</h2>
+                    <h2 class="heading_delivery heading">Доставка</h2>
                     <p class="delivery_text">
-                        Мы с удовольствием доставим ваш товар прямо к вашему<br />
-                        подъезду совершенно бессплатно! Ведь мы неплохо<br />
+                        Мы с удовольствием доставим ваш товар прямо к вашему
+                        подъезду совершенно бессплатно! Ведь мы неплохо
                         заработаем, поднимая его на ваш этаж.
                     </p>
                     <img src="img/delivery.png" width="136" height="164" />
                 </div>
             </div>
+        </div>
+        <div class="container">
             <div class="companies">
                 <img src="img/dji.png" width="260" height="100" />
 
@@ -199,13 +205,13 @@
                     <h2 class="heading">О нас</h2>
 
                     <p class="about_us_info">
-                        Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом
-                        из нас
+                        Огромный выбор гаджетов не оставит равнодушным гика,
+                        который есть в каждом из нас
                     </p>
 
                     <p class="about_us_info">
-                        Мы можем доставить товар в саммые отдаленные точки <br> России! DEVICE работает
-                        со многими транспортными компаниями:
+                        Мы можем доставить товар в саммые отдаленные точки 
+                        России! DEVICE работает со многими транспортными компаниями:
                     </p>
 
                     <ul class="trans_company">
@@ -227,8 +233,10 @@
                 </div>
             </div>
         </main>
+    </div>
         <footer class="main_footer">
-            <div class="main_footer_top main_footer_align_box">
+            <div class="container">
+            <div class="main_footer_top">
                 <a class="main_footer_logo logo" href="#">device</a>
                 <ul class="main_footer_userblock">
                     <li>
@@ -242,7 +250,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="main_footer_center main_footer_align_box">
+            <div class="main_footer_center">
                 <span class="main_footer_adress">г.Москва, ул. Строителей, 15</span>
                 <ul class="main_footer_navigation">
                     <li>
@@ -255,24 +263,24 @@
                         <a href="#" class="footer_navigation_link link_navigation">Контакты</a>
                     </li>
                 </ul>
-                <span class="center_navigation_number">Тел.:+7(495)495-95-95</span>
+                <span class="number">Тел.: +7(495)495-95-95</span>
             </div>
-            <div class="main_footer_bottom main_footer_align_box">
+            <div class="main_footer_bottom">
                 <div class="style_line"></div>
-
-                <ul class="main_footer_bottom_social">
-                    <li class="bottom_social_link">
-                        <a href="#" class="fb">fb</a>
+                <ul class="main_footer_social">
+                    <li>
+                        <a href="#" class="fb social_link">fb</a>
                     </li>
-                    <li class="bottom_social_link">
-                        <a href="#" class="inst">inst</a>
+                    <li>
+                        <a href="#" class="inst social_link">inst</a>
                     </li>
-                    <li class="bottom_social_link">
-                        <a href="#" class="tw">tw</a>
+                    <li>
+                        <a href="#" class="tw social_link">tw</a>
                     </li>
                 </ul>
                 <div class="htmlacad_link"></div>
             </div>
+        </div>
         </footer>
     </body>
 </html>

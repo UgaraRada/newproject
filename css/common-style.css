@@ -1,0 +1,152 @@
+body {
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+    font-weight: light;
+    font-family: Open Sans;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+.link_navigation {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Gilroy;
+    letter-spacing: 0.2em;
+}
+.logo {
+    font-size: 48px;
+    font-weight: Bold;
+    font-family: Gilroy;
+    text-transform: uppercase;
+}
+.heading {
+    font-size: 47px;
+    color: black;
+    font-weight: bold;
+    font-family: Gilroy;
+}
+.work_link {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gilroy;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.devices_link {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Gilroy;
+}
+.main_header {
+    margin-top: 40px;
+    padding-top: 0px;
+
+    background-color: rgb(247, 226, 150);
+    padding-top: 1px;
+    padding-bottom: 160px;
+}
+.main_header_logo {
+    display: block;
+    margin-left: 60px;
+    margin-top: -17px;
+    padding: 0;
+    margin-bottom: 35px;
+    width: 165px;
+}
+
+.main_header_top,
+.main_header_bottom {
+    width: 1040px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+.main_header_top {
+    margin-bottom: 53px;
+}
+
+.m_h_t_left,
+.m_h_t_right,
+.m_h_b_left,
+.m_h_b_right {
+    width: 520px;
+}
+.main_header_top_userblock,
+.main_navigation {
+    display: flex;
+}
+.link_login {
+    margin-right: auto;
+}
+.link_compare,
+.link_basket {
+    margin-left: 40px;
+}
+.link_contaсs {
+    margin-left: auto;
+}
+
+.link_delivery,
+.link_guaranee {
+    margin-right: 39px;
+}
+.main_footer {
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.main_footer_top,
+.main_footer_center,
+.main_footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_footer_logo {
+    color: rgb(255, 198, 0);
+}
+.main_footer_top {
+    margin-bottom: 35px;
+}
+
+.main_footer_userblock a,
+.main_footer_navigation a,
+.main_footer_social a {
+    color: white;
+}
+.main_footer_userblock li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.main_footer_center {
+    margin-bottom: 70px;
+}
+.main_footer_navigation {
+    display: flex;
+}
+.main_footer_navigation li {
+    margin-right: 38px;
+}
+.main_footer_social li {
+    display: inline-block;
+    margin-left: 22px;
+}
