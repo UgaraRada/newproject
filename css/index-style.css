@@ -6,7 +6,6 @@
 .preview_img,
 .description {
     width: 580px;
-    outline: 1px solid red;
 }
 .preview_img {
     position: relative;
@@ -19,18 +18,23 @@
 }
 
 .description_slogan {
-    outline: 1px solid;
     margin-top: -25px;
     line-height: 40px;
+    width: 392px;
 }
 
 .description_control {
     display: flex;
-    outline: 1px solid green;
+
     margin-top: 60px;
     align-items: center;
     width: 500px;
     margin-bottom: 75px;
+}
+.description_text {
+    display: block;
+    width: 500px;
+    padding: 0;
 }
 
 .description_link {
@@ -40,7 +44,6 @@
 
 .descriptoin_button {
     display: flex;
-    
 }
 
 .descriptoin_button li {
@@ -50,7 +53,7 @@
 .characteristics {
     display: flex;
     list-style: none;
-    outline: 1px solid green;
+
     margin: 0;
     padding: 0;
 }
@@ -77,23 +80,26 @@
     justify-content: space-between;
     margin-bottom: 146px;
 }
+.devices_boxes {
+    width: 160px;
+}
 
-.devices_box {
+.device_picture {
     width: 160px;
     height: 160px;
     background-color: rgb(247, 226, 150);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 38px; */
 }
 .services_background {
     width: 100%;
     background-color: rgb(229, 229, 229);
+    margin-bottom: 94px;
 }
 .services {
     width: 1160px;
-    outline: 1px solid red;
+
     margin: 0 auto;
 
     display: flex;
@@ -104,10 +110,7 @@
     padding-top: 91px;
     height: 319px;
     margin-right: 116px;
-}
-.services_links {
-    outline: 1px solid green;
-    
+    margin-bottom: 69px;
 }
 
 .service_link {
@@ -126,13 +129,11 @@
 .services_delivery {
     width: 850px;
     margin-top: -20px;
-    outline: 1px solid green;
-
 }
 
 .heading_delivery {
     padding: 0;
-    margin-top: 0; 
+    margin-top: 0;
 }
 .delivery_text {
     display: block;
@@ -146,44 +147,39 @@
 }
 
 .companies {
-    width: 1160px;
     height: 100px;
-    margin-left: 140px;
-    margin-top: 94px;
     margin-bottom: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid green;
 }
 
 .store_info {
-    width: 1160px;
-    height: 648px;
-    margin-left: 140px;
-    border: 1px solid red;
     display: flex;
 }
 
 .about_us,
 .contacts {
     width: 580px;
-    height: 648px;
-    margin-top: 0px;
     padding-top: 59px;
+    padding-bottom: 90px;
 }
 
 .about_us .heading,
 .contacts .heading {
     margin-top: 0;
 }
-
+.about_us_info {
+    display: block;
+    width: 490px;
+}
 .trans_company {
     padding-left: 25px;
     font-size: 18px;
     font-weight: bold;
     font-family: Gilroy;
     margin-top: 50px;
+    list-style: circle;
 }
 
 .trans_company li {
@@ -199,61 +195,4 @@
 .contacts .work_link {
     display: block;
     margin-top: 85px;
-}
-.main_footer {
-    width: 1440px;
-    height: 323px;
-    background-color: rgb(70, 70, 70);
-    color: white;
-    border: 1px solid rgb(70, 70, 70);
-}
-.main_footer a {
-    color: white;
-}
-
-.main_footer_align_box {
-    width: 1160px;
-    margin-left: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main_footer_top {
-    height: 50px;
-    margin-top: 65px;
-}
-.main_footer_logo {
-    color: rgb(255, 198, 0) !important;
-}
-
-.main_footer_userblock,
-.main_footer_bottom_social {
-    list-style: none;
-}
-.main_footer_userblock li {
-    display: inline-block;
-    margin-left: 60px;
-}
-
-.main_footer_center {
-    height: 24px;
-    margin-top: 35px;
-    border: 1px solid green;
-}
-.main_footer_navigation {
-    list-style: none;
-    display: flex;
-}
-.main_footer_navigation li {
-    margin-right: 38px;
-}
-.main_footer_bottom {
-    height: 40px;
-    margin-top: 70px;
-    border: 1px solid green;
-}
-.main_footer_bottom_social li {
-    display: inline-block;
-    margin-left: 22px;
 }
