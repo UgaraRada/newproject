@@ -39,6 +39,9 @@ main {
 .filter__content {
   padding: 15px;
 }
+.filter__content {
+    padding-bottom: 200px;
+}
 
 .filter__header {
   min-height: 50px;

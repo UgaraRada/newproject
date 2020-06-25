@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+.common_block {
+    display: flex;
+}
+.left_block {
+    margin-left: auto;
+    width: calc(400px + (100% - 1200px) / 2);
+    background: linear-gradient(
+        to bottom,
+        rgba(197, 197, 197, 1) 70px,
+        rgba(197, 197, 197, 0.5) 1%
+    );
+}
+.filter {
+    width: 400px;
+    background-color: rgba(197, 197, 197, 0.5);
+}
+.header {
+    padding: 10px;
+    height: 50px;
+    background-color: rgba(197, 197, 197, 1);
+}
+.tools {
+    padding: 10px;
+}
+.sort {
+    height: 50px;
+    background-color: rgba(197, 197, 197, 0.5);
+    padding: 10px;
+}
+.sorting_box {
+    width: 800px;
+}
+.content {
+    height: 400px;
+    padding: 10px;
+}
+.right_block {
+    margin-right: auto;
+    width: calc(800px + (100% - 1200px) / 2);
+    background: linear-gradient(to bottom, rgba(197, 197, 197, 0.5) 70px, white 1%);
+}

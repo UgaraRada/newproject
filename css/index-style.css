@@ -1,3 +1,6 @@
+.main_header {
+    padding-bottom: 160px;
+}
 .preview_block {
     width: 1160px;
     display: flex;
@@ -53,7 +56,6 @@
 .characteristics {
     display: flex;
     list-style: none;
-
     margin: 0;
     padding: 0;
 }
@@ -99,9 +101,7 @@
 }
 .services {
     width: 1160px;
-
     margin: 0 auto;
-
     display: flex;
 }
 .services_box {
