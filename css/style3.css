@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .grid {
   display: grid;
   grid-template-columns: auto 320px 840px auto;
@@ -10,11 +14,13 @@ body {
 
 .grid-wrapper-left {
   width: 320px;
+  padding: 20px;
   margin-left: auto;
 }
 
 .grid-wrapper-right {
   width: 840px;
+  padding: 20px;
   margin-right: auto;
 }
 
@@ -34,6 +40,6 @@ body {
 }
 
 .content {
-  min-height: 600px;
+  min-height: 100px;
   background-color: white;
 }
