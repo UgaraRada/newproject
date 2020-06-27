@@ -20,7 +20,8 @@ ul {
     width: 1160px;
     margin: 0 auto;
 }
-.link_navigation {
+.link_navigation,
+.filter_caption {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
@@ -46,7 +47,8 @@ ul {
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
-.devices_link {
+.devices_link,
+.filter_name {
     font-size: 18px;
     font-weight: bold;
     font-family: Gilroy;
