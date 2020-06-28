@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link href="css/device-catalog-style.css" rel="stylesheet" />
-        <link href="css/common-style.css" rel="stylesheet" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="main_header">
-                <a class="main_header_logo logo" href="#">
-                    device
-                </a>
-                <nav class="main_header_top">
-                    <div class="m_h_t_left">
-                        <input type="text" class="main_header_top_search" value="Поиск по сайту" />
-                    </div>
-                    <div class="m_h_t_right">
-                        <ul class="main_header_top_userblock">
-                            <li class="name_user">
-                                <span>Валентин Петухов</span>
-                            </li>
-                            <li class="link_user link_login">
-                                <a href="#">Выйти</a>
-                            </li>
-                            <li class="link_user link_compare">
-                                <a href="#">Сравнить</a>
-                            </li>
-                            <li class="link_user link_basket">
-                                <a href="#">Корзина</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
 
-                <nav class="main_header_bottom">
-                    <div class="m_h_b_left">
-                        <a class="link_navigation" href="#">Каталог товаров</a>
-                    </div>
-                    <div class="m_h_b_right">
-                        <ul class="main_navigation">
-                            <li class="link_navigation link_delivery">
-                                <a href="#">Доставка</a>
-                            </li>
-                            <li class="link_navigation link_guaranee">
-                                <a href="#">Гарантия</a>
-                            </li>
-                            <li class="link_navigation link_contaсs">
-                                <a href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/device-catalog-style.css" rel="stylesheet" />
+    <link href="css/common-style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="main_header">
+            <a class="main_header_logo logo" href="#">
+                device
+            </a>
+            <nav class="main_header_top">
+                <div class="m_h_t_left">
+                    <input type="text" class="main_header_top_search" value="Поиск по сайту" />
+                </div>
+                <div class="m_h_t_right">
+                    <ul class="main_header_top_userblock">
+                        <li class="name_user">
+                            <span>Валентин Петухов</span>
+                        </li>
+                        <li class="link_user link_login">
+                            <a href="#">Выйти</a>
+                        </li>
+                        <li class="link_user link_compare">
+                            <a href="#">Сравнить</a>
+                        </li>
+                        <li class="link_user link_basket">
+                            <a href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav class="main_header_bottom">
+                <div class="m_h_b_left">
+                    <a class="link_navigation" href="#">Каталог товаров</a>
+                </div>
+                <div class="m_h_b_right">
+                    <ul class="main_navigation">
+                        <li class="link_navigation link_delivery">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="link_navigation link_guaranee">
+                            <a href="#">Гарантия</a>
+                        </li>
+                        <li class="link_navigation link_contaсs">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <main>
             <nav class="block_navigation">
                 <h2 class="header_block_navigation heading">Моноподы для селфи</h2>
                 <ul class="tree_navigation">
                     <li>
-                        <a class="branch_navigation link_main"  href="#">Главная</a>
+                        <a class="branch_navigation link_main" href="#">Главная</a>
                     </li>
                     <li>
                         <a class="branch_navigation link_catalog" href="#">Каталог товаров</a>
@@ -70,154 +72,201 @@
                     </li>
                 </ul>
             </nav>
+    </div>
+
+    <div class="choose_devices">
+
+        <div class="filter">
+            <div class="choose_wrapper_left">
+                <div class="filter_head">
+                    <h2 class="filter_h2 filter_caption">фильтр:</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="sorting_parameters">
+            <div class="choose_wrapper_right">
+                <div class="sorting_parameters_block">
+                    <h2 class="sorting_parameters_header filter_caption">cортировка:</h2>
+                    <ul class="choose_sorting_parameters">
+                        <li>
+                            <a class="sorting_link sort_cost" href="#">По цене</a>
+                        </li>
+                        <li>
+                            <a class="sorting_link sort_type" href="#">По типу</a>
+                        </li>
+                        <li>
+                            <a class="sorting_link sort_popular" href="#">По популярности</a>
+                        </li>
+                    </ul>
+                    <div class="arrows">cтрэлки</div>
+                </div>
+            </div>
+        </div>
+        <div class="filter_parameters">
+            <div class="choose_wrapper_left">
+                <div class="filter_cost">
+                    <span class="cost_header filter_name">Стоимость</span>
+                    <div class="polzunok"></div>
+                </div>
+
+                <div class="filter_color">
+                    <span class="color_header filter_name">Цвет</span>
+
+                    <ul class="choose_color">
+
+                        <li class="color_name"><input id="black" type="checkbox" checked />
+                            <label for="black">Черный</label>
+                        </li>
+                        <li class="color_name"><input id="white" type="checkbox" />
+                            <label for="white">Белый</label>
+                        </li>
+                        <li class="color_name"><input id="blue" type="checkbox" checked />
+                            <label for="blue">Синий</label>
+                        </li>
+                        <li class="color_name"><input id="red" type="checkbox" checked />
+                            <label for="red">Красный</label>
+                        </li>
+                        <li class="color_name"><input id="pink" type="checkbox" />
+                            <label for="pink">Розовый</label>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="filter_bluetooth">
+                    <span class="bluetooth_header filter_name">Bluetooth</span>
+                    <ul class="bluetooth_choose">
+                        <li>
+                            <label>
+                                <input type="radio" name="bluetooth" value="yes" checked />
+                                Есть
+                            </label>
+                        <li>
+                            <label>
+                                <input type="radio" name="bluetooth" value="no" />
+                                Нет
+                            </label>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="filter_show">
+                    <button>
+                        <a class="filter_button work_link" href="#">Показать</a>
+                    </button>
+                </div>
+            </div>
         </div>
 
-            <div class="choose_devices">
-                
-                <section class="filter">
-                    <h2 class="filter_head">Фильтр</h2>
-                    <div class="cost filter_block">
-                        <p class="">Стоимость</p>
-                        <div class="polzunok"></div>
+        <div class="devices_display">
+            <div class="choose_wrapper_right">
+                <div class="devices_pages">
+                    <div class="display_box">
+                        <a href="#" class="device_selection devices_link">
+
+                            <img src="img/ameteur selfie stick.png" width="360" height="380" />
+                            <div class="device_subscription">
+                                <span class="device_name">Любительская селфи-палка</span> 
+                                <span class="devices_price">500 руб.</span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="color filter_block">
-                        <p class="color_signature">Цвет</p>
-                        <div class="form_group">
-                            <input id="black" type="checkbox" checked />
-                            <label for="black">Черный</label>
-                            <input id="white" type="checkbox" />
-                            <label for="white">Белый</label>
-                            <input id="blue" type="checkbox" checked />
-                            <label for="blue">Синий</label>
-                            <input id="red" type="checkbox" checked />
-                            <label for="red">Красный</label>
-                            <input id="pink" type="checkbox" />
-                            <label for="pink">Розовый</label>
-                        </div>
+                    <div class="display_box">
+                        <a href="#" class="device_selection devices_link">
+
+                            <img src="img/professional selfie stick.png" width="360" height="380" />
+                            <div class="device_subscription">
+                                <span class="device_name">Профессиональная селфи-палка</span>
+                                <span class="devices_price">1500 руб.</span>
+                            </div>
+                        </a>
                     </div>
-                    <div class="bluetooth filter_block">
-                        <p class="signature">Bluetooth</p>
-                        <input id="yes" type="radio" checked />
-                        <label for="yes">Есть</label>
-                        <input id="no" type="radio" />
-                        <label for="no">Нет</label>
+                    <div class="display_box">
+                        <a href="#" class="device_selection devices_link">
+
+                            <img src="img/unsinkable selfie stick.png" width="360" height="380" />
+                            <div class="device_subscription">
+                                <span class="device_name">Непотопляемая селфи-палка</span>
+                                <span class="devices_price">2500 руб.</span>
+                            </div>
+                        </a>
                     </div>
-                    <form class="filter">
-                        <button class="filter work_link">
-                            Показать
-                        </button>
-                    </form>
-                    <a class="filter work_link" href="#">Показать</a>
-                </section>
-                
-                    <div class="sorting_parameter">
-                        <h2 class="sorting_parameter_header">Сортировка:</h2>
-                        <ul class="sorting_parameters">
-                            <li>
-                                <button class="sorting_parameters">По цене</button>
-                            </li>
-                            <li>
-                                <button class="sorting_parameters">По типу</button>
-                            </li>
-                            <li>
-                                <button class="sorting_parameters">По популярности</button>
-                            </li>
-                        </ul>
-                        <div class="arrows"></div>
+                    <div class="display_box ">
+                        <a href="#" class="device_selection devices_link">
+
+                            <img src="img/selfie stick follow me.png" width="360" height="380" />
+                            <div class="device_subscription">
+                                <span class="device_name">Селфи-палка &laquoСледуй за мной&raquo</span>
+                                <span class="devices_price">4900 руб.</span>
+                            </div>
+                        </a>
                     </div>
-                    <section class="devices_preview">
-                        <div class="devices">
-                        <div class="device_box">
-                            <img src="img/ameteur selfie stick.png.png" width="360" height="380" />
-                            <span class="devices_signature">Любительская селфи-палка</span>
-                            <span class="devices_price">500 руб.</span>
-                        </div>
-                        <div class="device_box">
-                            <img
-                                src="img/professional selfie stick.png.png"
-                                width="360"
-                                height="380"
-                            />
-                            <span class="devices_signature">Профессиональная селфи-палка</span>
-                            <span class="devices_price">1500 руб.</span>
-                        </div>
-                        <div class="device_box">
-                            <img
-                                src="img/unsinkable selfie stick.png.png"
-                                width="360"
-                                height="380"
-                            />
-                            <span class="devices_signature">Непотопляемая селфи-палка</span>
-                            <span class="devices_price">2500 руб.</span>
-                        </div>
-                        <div class="device_box">
-                            <img
-                                src="img/selfie stick follow me.png.png"
-                                width="360"
-                                height="380"
-                            />
-                            <span class="devices_signature"
-                                >Селфи-палка &laquoСледуй за мной&raquo</span
-                            >
-                            <span class="devices_price">4900 руб.</span>
-                        </div>
-                    </div>
-                    
+
+
                     <div class="page_selection">
-                        <button class="pick_btn_back" type="button">Назад</button>
+                        <a href="#" class="page_link link_back">Назад</a>
                         <ul class="pick_number">
-                            <li><button class="pick_number ">1</button></li>
-                            <li><button class="pick_number ">2</button></li>
-                            <li><button class="pick_number ">3</button></li>
+                            <li><a href="#" class="page_number page_1">1</a></li>
+                            <li><a href="#" class="page_number page_2">2</a></li>
+                            <li><a href="#" class="page_number page_3">3</a></li>
                         </ul>
-                        <button class="pick_btn_next" type="button">Вперед</button>
+                        <a href="#" class="page_link link_next" type="button">Вперед</a>
                     </div>
-                
-            </section>
-        </main>
-        <footer class="main_footer">
-            <div class="main_footer_top">
-                <a class="logo_2">device</a>
-                <ul class="main_footer_top_link">
-                    <li>
-                        <a class="login" href="#">Войти</a>
-                    </li>
-                    <li>
-                        <a class="compare" href="#">Сравнить</a>
-                    </li>
-                    <li>
-                        <a class="basket" href="#">Корзина</a>
-                    </li>
-                </ul>
+                </div>
             </div>
-            <div class="main_footer_center">
-                <span class="main_footer_center_adress">г.Москва, ул. Строителей, 15</span>
-                <ul class="main_footer_center_navigation">
-                    <li>
-                        <a href="#" class="center_navigation_link">Доставка</a>
-                    </li>
-                    <li>
-                        <a href="#" class="center_navigation_link">Гарантия</a>
-                    </li>
-                    <li>
-                        <a href="#" class="center_navigation_link">Контакты</a>
-                    </li>
-                </ul>
-                <span class="center_navigation_number">Тел.:+7(495)495-95-95</span>
-            </div>
-            <div class="main_footer_bottom">
-                <ul class="main_footer_bottom_social">
-                    <li class="social_link">
-                        <a href="#" class="fb">facebook</a>
-                    </li>
-                    <li class="social_link">
-                        <a href="#" class="inst">instagram</a>
-                    </li>
-                    <li class="social_link">
-                        <a href="#" class="tw">twitter</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </div>
+    </main>
+    <footer class="main_footer">
+        <div class="container">
+        <nav class="main_footer_top">
+            <a class="main_footer_logo logo" href="#">device</a>
+            <ul class="main_footer_userblock">
+                <li>
+                    <a class="login" href="#">Выйти</a>
+                </li>
+                <li>
+                    <a class="compare" href="#">Сравнить</a>
+                </li>
+                <li>
+                    <a class="basket" href="#">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main_footer_center">
+            <span class="main_footer_adress">г.Москва, ул. Строителей, 15</span>
+            <ul class="main_footer_navigation">
+                <li>
+                    <a href="#" class="footer_navigation_link link_navigation">Доставка</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_navigation_link link_navigation">Гарантия</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_navigation_link link_navigation">Контакты</a>
+                </li>
+            </ul>
+            <span class="number">Тел.: +7(495)495-95-95</span>
+        </div>
+        <div class="main_footer_bottom">
+            <div class="style_line"></div>
+            <ul class="main_footer_social">
+                <li>
+                    <a href="#" class="fb social_link">fb</a>
+                </li>
+                <li>
+                    <a href="#" class="inst social_link">inst</a>
+                </li>
+                <li>
+                    <a href="#" class="tw social_link">tw</a>
+                </li>
+            </ul>
+            <div class="htmlacad_link"></div>
+        </div>
+    </div>
+    </footer>
+</body>
+
 </html>

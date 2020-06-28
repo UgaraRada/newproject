@@ -2,10 +2,6 @@ body {
   margin: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .grid {
   display: grid;
   grid-template-columns: auto 320px 840px auto;
