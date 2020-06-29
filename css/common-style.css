@@ -39,6 +39,14 @@ ul {
     text-transform: uppercase;
 }
 
+.logo:hover {
+    opacity: 60%;
+}
+
+.logo:active {
+    opacity: 30%;
+}
+
 .heading {
     font-size: 47px;
     color: black;
@@ -110,6 +118,9 @@ ul {
 .link_basket {
     margin-left: 40px;
 }
+.user_label {
+    margin-right: 11px;
+}
 
 .link_contaсs {
     margin-left: auto;
@@ -167,7 +178,24 @@ ul {
     margin-right: 38px;
 }
 
-.main_footer_social li {
-    display: inline-block;
+.main_footer_social {
+    display: flex;
+}
+
+.social_link {
     margin-left: 22px;
+    opacity: 30%;
+}
+.fb {
+    margin-left: 0;
+}
+.fb:hover,
+.inst:hover,
+.tw:hover {
+    opacity: 100%;
+}
+.fb:active,
+.inst:active,
+.tw:active {
+    opacity: 10%;
 }

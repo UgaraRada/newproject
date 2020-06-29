@@ -3,8 +3,8 @@
 }
 
 .filter_caption,
-.page_number,
-.page_link {
+.button_number,
+.page_button {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
@@ -100,18 +100,48 @@
     margin-right: auto;
 }
 
-.sorting_link {
+.sorting_button {
+    border: none;
     font-size: 14px;
-    margin-left: 30px;
+    outline: none;
+    padding: 0;
+    margin-right: 29px;
+    background-color: rgba(235, 235, 235, 0);
+}
+
+.sorting_button:hover {
+    opacity: 60%;
+}
+
+.sorting_button:active {
+    opacity: 100%;
+}
+
+.sort_cost {
+    border: none;
+    background-color: none;
 }
 
 .sort_type,
 .sort_popular {
     opacity: 30%;
+
 }
 
-.arrows {
-    outline: 2px solid plum;
+.sorting_arrows {
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: rgba(235, 235, 235, 0);
+    margin-left: 19px;
+}
+
+.sorting_arrows:hover {
+    opacity: 40%;
+}
+
+.sorting_arrows:active {
+    opacity: 100%;
 }
 
 .filter_cost,
@@ -154,6 +184,7 @@
 .device_subscription {
     display: flex;
     justify-content: space-between;
+    margin-top: 37px;
     margin-bottom: 45px;
 }
 
@@ -171,28 +202,53 @@
 .page_selection {
     display: flex;
     align-items: center;
-    padding: 25px;
     width: 760px;
     background-color: rgba(235, 235, 235, 0.5);
 }
 
-.link_back {
-    margin-right: auto;
+.page_button,
+.button_number {
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: rgba(235, 235, 235, 0);
+
 }
 
-.link_next {
+.button_back {
+    margin-right: auto;
+    padding: 30px;
+}
+
+.button_next {
     margin-left: auto;
+    padding: 30px;
+}
+
+.button_back:hover,
+.button_next:hover {
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.button_back:active,
+.button_next:active {
+    color: rgba(0, 0, 0, 0.3);
+
 }
 
 .pick_number {
     display: flex;
-
 }
 
-.page_number {
+.button_number {
     margin-right: 32px;
 }
-
+.button_number:hover {
+    opacity: 60%;
+}
+.button_number:active {
+    opacity: 100%;
+}
 .page_2,
 .page_3 {
     opacity: 30%;
