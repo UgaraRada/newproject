@@ -37,6 +37,7 @@ ul {
     font-weight: Bold;
     font-family: Gilroy;
     text-transform: uppercase;
+    transition: all 0.3s;
 }
 
 .logo:hover {
@@ -95,7 +96,8 @@ ul {
 }
 
 .main_header_top {
-    margin-bottom: 53px;
+    margin-bottom: 44px;
+    min-height: 60px;
 }
 
 .m_h_t_left,
@@ -113,6 +115,63 @@ ul {
 .link_login {
     margin-right: auto;
 }
+.search_site {
+    display: flex;
+    width: 420px;
+    align-items: center;
+    position: relative;
+}
+.search_label {
+    margin-right: 19px;
+}
+.input_search {
+    font-size: 15px;
+    opacity: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(247, 226, 150);
+}
+input::-webkit-input-placeholder { 
+    color: black;
+    opacity: 30%;
+ }
+ .search_site:hover input::-webkit-input-placeholder { 
+    opacity: 60%;
+ }
+ .search_box {
+    position: relative;
+    width: 420px;
+    z-index: -10;
+ }
+ .search_box::before {
+    position: absolute;
+    bottom: -14px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    content: "";
+    transition-duration: 0.3s;
+    transition-property: width;
+ }
+ 
+  
+ .input_search:focus ~ .search_box::before {
+     width: 100%;
+ }
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+.button_search {
+    font-size: 15px;
+    margin-left: auto;
+    padding: 19px;
+    border: 2px solid black;
+    outline: none;
+    display: none;
+    background-color: rgb(247, 226, 150);
+}
 
 .link_compare,
 .link_basket {
@@ -120,6 +179,25 @@ ul {
 }
 .user_label {
     margin-right: 11px;
+}
+.link_user,
+.link_navigation {
+    transition: all 0.3s;
+}
+.link_user:hover,
+.link_navigation:hover {
+    opacity: 60%;
+}
+.link_user:active,
+.link_navigation:active {
+    opacity: 30%;
+}
+.link_catalog {
+    display: flex;
+    align-items: center;
+}
+.catalog_plus {
+    margin-left: 16px;
 }
 
 .link_contaсs {
@@ -185,6 +263,7 @@ ul {
 .social_link {
     margin-left: 22px;
     opacity: 30%;
+    transition: all 0.3s;
 }
 .fb {
     margin-left: 0;
