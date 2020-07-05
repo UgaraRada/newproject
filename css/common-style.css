@@ -138,23 +138,8 @@ input::-webkit-input-placeholder {
  .search_site:hover input::-webkit-input-placeholder { 
     opacity: 60%;
  }
- .search_box {
-    position: relative;
-    width: 420px;
-    z-index: -10;
- }
- .search_box::before {
-    position: absolute;
-    bottom: -14px;
-    width: 0;
-    height: 2px;
-    background-color: black;
-    content: "";
-    transition-duration: 0.3s;
-    transition-property: width;
- }
  
-  
+ 
  .input_search:focus ~ .search_box::before {
      width: 100%;
  }
@@ -169,15 +154,31 @@ input::-webkit-search-results-decoration { display: none; }
     padding: 19px;
     border: 2px solid black;
     outline: none;
-    display: none;
+    /* display: none; */
     background-color: rgb(247, 226, 150);
 }
+.search_box {
+    position: relative;
+    width: 420px;
+ }
+ .search_box::before {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    content: "";
+    transition-duration: 0.3s;
+    transition-property: width;
+ }
+
 
 .link_compare,
 .link_basket {
     margin-left: 40px;
 }
-.user_label {
+.user_label,
+.user_label_bottom {
     margin-right: 11px;
 }
 .link_user,
@@ -233,16 +234,34 @@ input::-webkit-search-results-decoration { display: none; }
     margin-bottom: 35px;
 }
 
-.main_footer_userblock a,
 .main_footer_navigation a,
 .main_footer_social a {
     color: white;
 }
+.link_user_bottom {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s;
+}
+.link_user_bottom:hover {
+    color: rgba(255, 255, 255, 1); 
+}
+.link_user_bottom:hover .user_label_bottom,
+.link_htmlacadem:hover  {
+    opacity: 60%;
+}
+.link_user_bottom:active,
+.link_user_bottom:active .user_label_bottom,
+.link_htmlacadem:active  {
+    opacity: 30%;
+}
+
 
 .main_footer_userblock li {
     display: inline-block;
     margin-left: 60px;
+    
 }
+
 
 .main_footer_center {
     margin-bottom: 70px;
@@ -258,6 +277,11 @@ input::-webkit-search-results-decoration { display: none; }
 
 .main_footer_social {
     display: flex;
+}
+.style_line_bottom {
+    width: 80px;
+    height: 7px;
+    background-color: rgb(255, 198, 0);
 }
 
 .social_link {

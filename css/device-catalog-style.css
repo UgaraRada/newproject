@@ -218,11 +218,13 @@
 .button_back {
     margin-right: auto;
     padding: 30px;
+    transition: all 0.3s;
 }
 
 .button_next {
     margin-left: auto;
     padding: 30px;
+    transition: all 0.3s;
 }
 
 .button_back:hover,
@@ -242,6 +244,7 @@
 
 .button_number {
     margin-right: 32px;
+    transition: all 0.3s;
 }
 .button_number:hover {
     opacity: 60%;
