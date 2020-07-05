@@ -5,7 +5,7 @@ body {
 header {
   display: flex;
   min-height: 50px;
-  /* (840 + 320) / 2 - 320 = 260  */
+  /* (840 + 320) / 2 - 320 = 260  (расстояние от конца первого блока до середины)*/
   background: linear-gradient(to right, rgba(197, 197, 197, 1) calc(50% - 260px), rgba(197, 197, 197, 0.5) calc(50% - 260px));
 }
 
