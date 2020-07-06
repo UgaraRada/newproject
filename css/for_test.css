@@ -1,11 +1,53 @@
 .irs-handle {
-  display: none;
+    display: none;
 }
 
-.button {
-  display: none;
+.irs--flat .irs-line {
+    height: 2px;
+    background-color: rgb(219, 219, 219);
 }
 
-.input:focus + .button {
-  display: block;
-} 
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    display: none;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    color: #dbdbdb;
+    font-size: 14px;
+    font-family: Gilroy;
+    background-color: #efefef;
+    top: 45px;
+}
+
+.irs--flat .irs-from:before,
+.irs--flat .irs-to:before,
+.irs--flat .irs-single:before {
+    display: none;
+}
+
+.irs--flat .irs-bar {
+    background-color: #91c92f;
+    height: 2px;
+}
+
+.irs--flat .irs-handle {
+    display: block;
+    width: 20px;
+    height: 22px;
+    background-image: url("../img/filter_button_slider.png");
+    cursor: pointer;
+    top: 16px;
+
+}
+
+.irs--flat .irs-handle>i:first-child {
+    display: none;
+}
+
+.size_box {
+    height: 100px;
+    width: 250px;
+}

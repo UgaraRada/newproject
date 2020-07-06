@@ -37,7 +37,7 @@ ul {
     font-weight: Bold;
     font-family: Gilroy;
     text-transform: uppercase;
-    transition: all 0.3s;
+    transition: opacity 0.3s;
 }
 
 .logo:hover {
@@ -92,7 +92,9 @@ ul {
     width: 1040px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+
 }
 
 .main_header_top {
@@ -140,9 +142,7 @@ input::-webkit-input-placeholder {
  }
  
  
- .input_search:focus ~ .search_box::before {
-     width: 100%;
- }
+ 
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
@@ -151,28 +151,47 @@ input::-webkit-search-results-decoration { display: none; }
 .button_search {
     font-size: 15px;
     margin-left: auto;
-    padding: 19px;
+    padding: 14px 18px;
     border: 2px solid black;
     outline: none;
-    /* display: none; */
+    cursor: pointer;
+    z-index: -1;
     background-color: rgb(247, 226, 150);
-}
-.search_box {
     position: relative;
-    width: 420px;
- }
- .search_box::before {
+    transition-property: z-index, color, background-color;
+    transition-duration: 0.7s;
+}
+.button_search::after {
     position: absolute;
-    bottom: 0;
     width: 0;
     height: 2px;
+    bottom: -2px;
+    right: 0;
     background-color: black;
+    transition-duration: 0.7s;
     content: "";
-    transition-duration: 0.3s;
-    transition-property: width;
+}
+
+.input_search:focus + .button_search {
+    z-index: 2;
+}
+.input_search:focus + .button_search::after {
+    width: 420px;
+}
+.button_search:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: black;
+}
+.button_search:active {
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.search_box {
+    position: absolute;
+    width: 420px;
  }
-
-
+ 
 .link_compare,
 .link_basket {
     margin-left: 40px;
@@ -182,15 +201,18 @@ input::-webkit-search-results-decoration { display: none; }
     margin-right: 11px;
 }
 .link_user,
-.link_navigation {
-    transition: all 0.3s;
+.link_navigation,
+.menu_nav_link {
+    transition: opacity 0.3s;
 }
 .link_user:hover,
-.link_navigation:hover {
+.link_navigation:hover,
+.menu_nav_link:hover {
     opacity: 60%;
 }
 .link_user:active,
-.link_navigation:active {
+.link_navigation:active,
+.menu_nav_link:active {
     opacity: 30%;
 }
 .link_catalog {
@@ -208,6 +230,46 @@ input::-webkit-search-results-decoration { display: none; }
 .link_delivery,
 .link_guaranee {
     margin-right: 39px;
+}
+.drop_menu_navigation {
+    display: grid;
+    margin-top: 20px;
+    position: absolute;
+    width: 580px;
+    z-index: -10;
+    height: 0;
+    grid-template-areas: 
+    "v_r f_b qua"
+    "m_f_s s_w ."
+    "act_cam . .";
+}
+.link_catalog:hover .drop_menu_navigation {
+    min-height: 110px;
+    z-index: 1;
+}
+.menu_nav_link {
+    display: block;
+    margin-right: 45px;
+    margin-bottom: 5px;
+    
+}
+.men_vir_real {
+    grid-area: v_r;
+}
+.men_fit_brace {
+    grid-area: f_b;
+}
+.men_quadrocopt {
+    grid-area: qua;
+}
+.men_mon_for_sel {
+    grid-area: m_f_s;
+}
+.men_smart_watch {
+    grid-area: s_w;
+}
+.men_act_cam {
+    grid-area: act_cam;
 }
 
 .main_footer {
@@ -240,7 +302,8 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .link_user_bottom {
     color: rgba(255, 255, 255, 0.7);
-    transition: all 0.5s;
+    transition-property: color, opacity;
+    transition-duration: 0.5s;
 }
 .link_user_bottom:hover {
     color: rgba(255, 255, 255, 1); 
@@ -287,7 +350,7 @@ input::-webkit-search-results-decoration { display: none; }
 .social_link {
     margin-left: 22px;
     opacity: 30%;
-    transition: all 0.3s;
+    transition: opacity 0.3s;
 }
 .fb {
     margin-left: 0;
