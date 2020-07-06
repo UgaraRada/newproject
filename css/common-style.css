@@ -108,6 +108,12 @@ ul {
 .m_h_b_right {
     width: 520px;
 }
+.m_h_b_left {
+    position: relative; 
+}
+.m_h_b_right {
+    align-self: self-start;
+}
 
 .main_header_top_userblock,
 .main_navigation {
@@ -121,7 +127,6 @@ ul {
     display: flex;
     width: 420px;
     align-items: center;
-    position: relative;
 }
 .search_label {
     margin-right: 19px;
@@ -136,11 +141,11 @@ ul {
 input::-webkit-input-placeholder { 
     color: black;
     opacity: 30%;
+    transition: opacity 0.3s;
  }
- .search_site:hover input::-webkit-input-placeholder { 
+.search_site input:hover::-webkit-input-placeholder { 
     opacity: 60%;
  }
- 
  
  
 input::-webkit-search-decoration,
@@ -187,10 +192,6 @@ input::-webkit-search-results-decoration { display: none; }
     color: rgba(255, 255, 255, 0.3);
 }
 
-.search_box {
-    position: absolute;
-    width: 420px;
- }
  
 .link_compare,
 .link_basket {
@@ -218,6 +219,7 @@ input::-webkit-search-results-decoration { display: none; }
 .link_catalog {
     display: flex;
     align-items: center;
+    width: 260px;
 }
 .catalog_plus {
     margin-left: 16px;
@@ -231,22 +233,40 @@ input::-webkit-search-results-decoration { display: none; }
 .link_guaranee {
     margin-right: 39px;
 }
+.drop_down_menu_block {
+    width: 580px;
+    height: 0;
+    opacity: 0;
+    z-index: 1;
+    transition-property: height, opacity;
+    transition-duration: 1s;
+}
 .drop_menu_navigation {
     display: grid;
-    margin-top: 20px;
-    position: absolute;
     width: 580px;
-    z-index: -10;
-    height: 0;
+    padding-top: 15px;
+    display: none;
     grid-template-areas: 
     "v_r f_b qua"
     "m_f_s s_w ."
     "act_cam . .";
 }
-.link_catalog:hover .drop_menu_navigation {
-    min-height: 110px;
-    z-index: 1;
+.link_catalog:hover + .drop_down_menu_block {
+    height: 100px;
+    opacity: 100%;
 }
+.link_catalog:hover + .drop_down_menu_block .drop_menu_navigation {
+    display: grid;
+}
+
+.drop_down_menu_block:hover {
+    height: 100px;
+    opacity: 100%;
+}
+.drop_down_menu_block:hover .drop_menu_navigation {
+    display: grid;
+}
+
 .menu_nav_link {
     display: block;
     margin-right: 45px;
@@ -261,6 +281,7 @@ input::-webkit-search-results-decoration { display: none; }
 }
 .men_quadrocopt {
     grid-area: qua;
+    margin-right: 0;
 }
 .men_mon_for_sel {
     grid-area: m_f_s;
