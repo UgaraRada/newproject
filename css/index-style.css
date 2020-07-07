@@ -42,17 +42,40 @@
 }
 
 .description_link {
-    margin-right: auto;
-    margin-left: 44px;
+    margin-right: auto; 
+    width: 220px; 
 }
 
-.descriptoin_button {
+.descriptoin_buttons {
     display: flex;
 }
 
-.descriptoin_button li {
+.preview_radio_block {
     padding-left: 21px;
 }
+.preview_radio_block input[type=radio] {
+    display: none;
+}
+.preview_radio_block label {
+    position: relative;
+    cursor: pointer;
+    margin-left: 21px;
+    /* padding-left: 21px; */
+
+}
+.preview_radio_block label::before {
+    position: absolute;
+    content: "";
+	width: 12px;
+	height: 12px;
+	left: -15px;
+    bottom: 4px;
+    background: url("../img/slider-button-empty.png") 0 0 no-repeat ;
+    transition: background 0.4s;
+}
+.preview_radio:checked ~ label::before {
+    background: url("../img/slider-button.png") 0 0 no-repeat;
+  }
 
 .characteristics {
     display: flex;
@@ -86,6 +109,9 @@
 .devices_boxes {
     width: 160px;
 }
+.devices_link {
+    transition: color 0.5s;
+}
 
 .device_picture {
     width: 160px;
@@ -94,7 +120,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 35px;
+    transition:background-color 0.4s;
 }
+.device_picture img {
+    transition: opacity 0.3s;
+}
+.devices_link:hover .device_picture {
+    background-color: rgb(240, 197, 46);
+}
+.devices_link:active .device_picture img {
+    opacity: 30%;
+}
+.devices_link:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .services_background {
     width: 100%;
     background-color: rgb(229, 229, 229);
@@ -107,14 +148,14 @@
 }
 .services_box {
     border-right: 7px solid black;
-    margin-top: -109px;
-    padding-top: 91px;
-    height: 319px;
+    margin-top: -86px;
+    padding-top: 66px;
+    padding-bottom: 36px;
     margin-right: 116px;
     margin-bottom: 69px;
 }
 
-.service_link {
+.service_buttons {
     display: block;
     margin-bottom: 49px;
     text-align: center;
@@ -122,14 +163,52 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.services_links li:first-child a {
-    background-color: black;
-    color: rgb(247, 225, 132);
+.services_buttons input[type=radio] {
+    display: none;
 }
+.service_button_label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    width: 160px;
+    margin-right: 117px;
+    margin-bottom: 24px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/background_work_link.png") 0 0 no-repeat;
+    background-size: 100% 8px;
+    background-position-y: center;
+    transition-property: color, background-size;
+    transition-duration: 0.3s;
+}
+.service_button_label::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 40px;
+    background-color: black;
+    width: 0;
+    z-index: -1;
+    left: 0;
+    transition: width 0.5s;
+}
+.service_button_label:hover {
+    background-size: 100% 100%;
+}
+.service_choose_button:checked + .service_button_label {
+    color: rgb(247, 225, 132) ;
+}
+.service_choose_button:checked ~ .service_button_label::after {
+    width: 278px;
+}
+
 
 .services_delivery {
     width: 850px;
     margin-top: -20px;
+    position: relative;
 }
 
 .heading_delivery {
@@ -142,19 +221,44 @@
 }
 
 .services_delivery img {
-    position: relative;
-    top: -180px;
-    left: 550px;
+    position: absolute;
+    top: 0px;
+    left: 555px;
 }
 
 .companies {
-    height: 100px;
     margin-bottom: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.companies_boxes {
+    width: 260px;
+    height: 100px;
+    transition: background 0.3s;
+}
+.dji {
+    background: url("../img/dji.png") 0 0 no-repeat;
+}
+.dji:hover {
+    background: url("../img/dji_color.png") 0 0 no-repeat; 
+}
+.spGadget {
+    background: url("../img/spGadget.png") 0 0 no-repeat;
+}
+.spGadget:hover {
+    background: url("../img/spGadget_color.png") 0 0 no-repeat; 
+}.gopro {
+    background: url("../img/gopro.png") 0 0 no-repeat;
+}
+.gopro:hover {
+    background: url("../img/gopro_color.png") 0 0 no-repeat; 
+}.vive {
+    background: url("../img/vive.png") 0 0 no-repeat;
+}
+.vive:hover {
+    background: url("../img/vive_color.png") 0 0 no-repeat; 
+}
 .store_info {
     display: flex;
 }
@@ -180,7 +284,9 @@
     font-weight: bold;
     font-family: Gilroy;
     margin-top: 50px;
-    list-style: circle;
+    /* list-style-image: url("../img/trans_company_marker.png"); */
+    list-style-type: circle;
+    
 }
 
 .trans_company li {
@@ -192,8 +298,7 @@
 .contacts img {
     margin-top: 10px;
 }
-.about_us .work_link,
-.contacts .work_link {
-    display: block;
+.info_link {
     margin-top: 85px;
+    width: 260px;
 }

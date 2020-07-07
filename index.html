@@ -21,7 +21,7 @@
                     <form class="search_site" action="#" name="search_site">
                         <img src="img/search.png" class="search_label" width="16px" height="16px">
                         <input type="search" class="input_search" placeholder="Поиск по сайту" />
-                        <button type="submit" class="button_search">Найти</button> 
+                        <button type="submit" class="button_search">Найти</button>
                     </form>
                 </div>
                 <div class="m_h_t_right">
@@ -52,14 +52,14 @@
                         <img src="img/plus.png" class="catalog_plus" width="16px" height="16px">
                     </a>
                     <div class="drop_down_menu_block">
-                    <div class="drop_menu_navigation">
-                        <a href="#" class="menu_nav_link men_vir_real">Виртуальная реальность</a>
-                        <a href="#" class="menu_nav_link men_fit_brace">Фитнес-браслеты</a>
-                        <a href="#" class="menu_nav_link men_quadrocopt">Квадракоптеры</a>
-                        <a href="#" class="menu_nav_link men_mon_for_sel">Моноподы для селфи</a>
-                        <a href="#" class="menu_nav_link men_smart_watch">Умные часы</a>
-                        <a href="#" class="menu_nav_link men_act_cam">Экшн-камеры</a>
-                    </div>
+                        <div class="drop_menu_navigation">
+                            <a href="#" class="menu_nav_link men_vir_real">Виртуальная реальность</a>
+                            <a href="#" class="menu_nav_link men_fit_brace">Фитнес-браслеты</a>
+                            <a href="#" class="menu_nav_link men_quadrocopt">Квадракоптеры</a>
+                            <a href="#" class="menu_nav_link men_mon_for_sel">Моноподы для селфи</a>
+                            <a href="#" class="menu_nav_link men_smart_watch">Умные часы</a>
+                            <a href="#" class="menu_nav_link men_act_cam">Экшн-камеры</a>
+                        </div>
                     </div>
                 </div>
                 <div class="m_h_b_right">
@@ -75,7 +75,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
             </nav>
         </header>
         <main class="opening_main">
@@ -96,15 +96,19 @@
                     </p>
                     <div class="description_control">
                         <a class="description_link work_link" href="#">Подробнее</a>
-                        <ul class="descriptoin_button">
-                            <li>
-                                <input name="preview_product" type="radio" value="selfi_stick" checked />
+                        <ul class="descriptoin_buttons">
+                            <li class="preview_radio_block">
+                                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_1"
+                                    checked />
+                                <label for="list_1"></label>
                             </li>
-                            <li>
-                                <input name="preview_product" type="radio" value="" />
+                            <li class="preview_radio_block">
+                                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_2" />
+                                <label for="list_2"></label>
                             </li>
-                            <li>
-                                <input name="preview_product" type="radio" value="" />
+                            <li class="preview_radio_block">
+                                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_3" />
+                                <label for="list_3"></label>
                             </li>
                         </ul>
                     </div>
@@ -182,16 +186,20 @@
     <div class="services_background">
         <div class="services">
             <div class="services_box">
-                <ul class="services_links">
+                <ul class="services_buttons">
                     <li>
-                        <a href="#" class="service_link work_link">Доставка</a>
+                        <input class="service_choose_button" name="services" type="radio" value="" id="delivery"
+                            checked />
+                        <label for="delivery" class="service_button_label">Доставка</label>
                     </li>
                     <li>
-                        <a href="#" class="service_link work_link">Гарантия</a>
+                        <input class="service_choose_button" name="services" type="radio" value="" id="guarantee" />
+                        <label for="guarantee" class="service_button_label">Гарантия</label>
                     </li>
 
                     <li>
-                        <a href="#" class="service_link work_link">Кредит</a>
+                        <input class="service_choose_button" name="services" type="radio" value="" id="credit" />
+                        <label for="credit" class="service_button_label">Кредит</label>
                     </li>
                 </ul>
             </div>
@@ -208,13 +216,10 @@
     </div>
     <div class="container">
         <div class="companies">
-            <img src="img/dji.png" width="260" height="100" />
-
-            <img src="img/spGadget.png" width="260" height="100" />
-
-            <img src="img/gopro.png" width="260" height="100" />
-
-            <img src="img/vive.png" width="260" height="100" />
+            <div class="companies_boxes dji"></div>
+            <div class="companies_boxes spGadget"></div>
+            <div class="companies_boxes gopro"></div>
+            <div class="companies_boxes vive"></div>
         </div>
 
         <div class="store_info">
@@ -236,7 +241,7 @@
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a class="work_link" href="#">подробнее о нас</a>
+                <a class="info_link work_link" href="#">подробнее о нас</a>
             </div>
             <div class="contacts">
                 <h2 class="heading">Контакты</h2>
@@ -246,7 +251,7 @@
                 </p>
 
                 <img src="img/facking map.png" width="560px" height="222px" />
-                <a class="work_link" href="#">напишите нам</a>
+                <a class="info_link work_link" href="#">напишите нам</a>
             </div>
         </div>
         </main>

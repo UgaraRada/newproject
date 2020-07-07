@@ -24,12 +24,14 @@ ul {
     margin: 0 auto;
 }
 
-.link_navigation {
+.link_navigation,
+.service_button_label {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     font-family: Gilroy;
     letter-spacing: 0.2em;
+    
 }
 
 .logo {
@@ -61,6 +63,22 @@ ul {
     font-family: Gilroy;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/background_work_link.png") 0 0 no-repeat;
+    background-size: 100% 8px;
+    background-position-y: center;
+    transition-property: color, background-size;
+    transition-duration: 0.3s;
+}
+.work_link:hover {
+    background-size: 100% 100%;
+}
+.work_link:active {
+    background-size: 100% 100%;
+    color: rgba(0, 0, 0, 0.3)
 }
 
 .devices_link,
@@ -321,7 +339,8 @@ input::-webkit-search-results-decoration { display: none; }
 .main_footer_social a {
     color: white;
 }
-.link_user_bottom {
+.link_user_bottom,
+.link_htmlacadem {
     color: rgba(255, 255, 255, 0.7);
     transition-property: color, opacity;
     transition-duration: 0.5s;
@@ -386,3 +405,4 @@ input::-webkit-search-results-decoration { display: none; }
 .tw:active {
     opacity: 10%;
 }
+ 
