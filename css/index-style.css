@@ -21,7 +21,7 @@
 .preview_block::after {
     content: '01';
     position: absolute;
-    font-family: Gilroy;
+    font-family: GilroyExtraBold;
     font-size: 179.2px;
     font-weight: bold;
     color: white;
@@ -313,7 +313,7 @@
     padding-left: 25px;
     font-size: 18px;
     font-weight: bold;
-    font-family: Gilroy;
+    font-family: GilroyExtraBold;
     margin-top: 50px;
     list-style-type: circle;
 }

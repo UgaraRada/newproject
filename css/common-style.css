@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy.ttf");
+}
+@font-face {
+    font-family: "GilroyExtraBold";
+    src: url("../fonts/Gilroy\ ExtraBold.otf");
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Open\ Sans.ttf");
+}
 body {
     font-size: 15px;
     line-height: 30px;
@@ -29,7 +41,7 @@ ul {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
-    font-family: Gilroy;
+    font-family: GilroyExtraBold;
     letter-spacing: 0.2em;
     
 }
@@ -37,7 +49,7 @@ ul {
 .logo {
     font-size: 48px;
     font-weight: Bold;
-    font-family: Gilroy;
+    font-family: GilroyExtraBold;
     text-transform: uppercase;
     transition: opacity 0.3s;
 }
@@ -54,13 +66,13 @@ ul {
     font-size: 47px;
     color: black;
     font-weight: bold;
-    font-family: Gilroy;
+    font-family: GilroyExtraBold;
 }
 
 .work_link {
     font-size: 18px;
     font-weight: bold;
-    font-family: Gilroy;
+    font-family: GilroyExtraBold;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     display: flex;
@@ -85,7 +97,7 @@ ul {
 .filter_name {
     font-size: 18px;
     font-weight: bold;
-    font-family: Gilroy;
+    font-family: GilroyExtraBold;
 }
 
 .main_header {
