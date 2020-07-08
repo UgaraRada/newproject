@@ -9,8 +9,9 @@
     <script src="jquery-3.5.1.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
-    <link href="css/device-catalog-style.css" rel="stylesheet" />
+
     <link href="css/common-style.css" rel="stylesheet" />
+    <link href="css/device-catalog-style.css" rel="stylesheet" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
@@ -26,21 +27,29 @@
             </a>
             <nav class="main_header_top">
                 <div class="m_h_t_left">
-                    <input type="text" class="main_header_top_search" value="Поиск по сайту" />
+                    <form class="search_site" action="#" name="search_site">
+                        <img src="img/search.png" class="search_label" width="16px" height="16px">
+                        <input type="search" class="input_search" placeholder="Поиск по сайту" />
+                        <button type="submit" class="button_search">Найти</button>
+                    </form>
                 </div>
                 <div class="m_h_t_right">
                     <ul class="main_header_top_userblock">
-                        <li class="name_user">
-                            <span>Валентин Петухов</span>
-                        </li>
                         <li class="link_user link_login">
-                            <a href="#">Выйти</a>
+                            <img src="img/user_header.png" class="user_label" width="13px" height="12px">
+                            <span class="name_user">Валентин Петухов</span>
+                            <a href="#" class="link_user link_login">
+                                <span class="link_out"> Выйти</span></a>
                         </li>
                         <li class="link_user link_compare">
-                            <a href="#">Сравнить</a>
+                            <a href="#">
+                                <img src="img/compare_header.png" class="user_label" width="10px" height="10px">
+                                Сравнить</a>
                         </li>
                         <li class="link_user link_basket">
-                            <a href="#">Корзина</a>
+                            <a href="#">
+                                <img src="img/basket_header.png" class="user_label" width="12px" height="12px">
+                                Корзина</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +57,20 @@
 
             <nav class="main_header_bottom">
                 <div class="m_h_b_left">
-                    <a class="link_navigation" href="#">Каталог товаров</a>
+                    <a class="link_navigation link_catalog" href="#">
+                        Каталог товаров
+                        <img src="img/plus.png" class="catalog_plus" width="16px" height="16px">
+                    </a>
+                    <div class="drop_down_menu_block">
+                        <div class="drop_menu_navigation">
+                            <a href="#" class="menu_nav_link men_vir_real">Виртуальная реальность</a>
+                            <a href="#" class="menu_nav_link men_fit_brace">Фитнес-браслеты</a>
+                            <a href="#" class="menu_nav_link men_quadrocopt">Квадракоптеры</a>
+                            <a href="#" class="menu_nav_link men_mon_for_sel">Моноподы для селфи</a>
+                            <a href="#" class="menu_nav_link men_smart_watch">Умные часы</a>
+                            <a href="#" class="menu_nav_link men_act_cam">Экшн-камеры</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="m_h_b_right">
                     <ul class="main_navigation">
@@ -63,6 +85,7 @@
                         </li>
                     </ul>
                 </div>
+
             </nav>
         </header>
         <main>
@@ -70,13 +93,13 @@
                 <h2 class="header_block_navigation heading">Моноподы для селфи</h2>
                 <ul class="tree_navigation">
                     <li>
-                        <a class="branch_navigation link_main" href="#">Главная</a>
+                        <a class="branch_navigation brach_main" href="#">Главная</a>
                     </li>
                     <li>
-                        <a class="branch_navigation link_catalog" href="#">Каталог товаров</a>
+                        <a class="branch_navigation brach_catalog" href="#">Каталог товаров</a>
                     </li>
                     <li>
-                        <a class="branch_navigation link_monopods" href="#">Моноподы для селфи</a>
+                        <a class="branch_navigation brach_monopods" href="#">Моноподы для селфи</a>
                     </li>
                 </ul>
             </nav>
@@ -128,20 +151,25 @@
 
                     <ul class="choose_color">
 
-                        <li class="color_name"><input id="black" type="checkbox" checked />
-                            <label for="black">Черный</label>
+                        <li class="color_name">
+                            <input id="black" type="checkbox" checked />
+                            <label class="color_label" for="black">Черный</label>
                         </li>
-                        <li class="color_name"><input id="white" type="checkbox" />
-                            <label for="white">Белый</label>
+                        <li class="color_name">
+                            <input id="white" type="checkbox" />
+                            <label class="color_label" for="white">Белый</label>
                         </li>
-                        <li class="color_name"><input id="blue" type="checkbox" checked />
-                            <label for="blue">Синий</label>
+                        <li class="color_name">
+                            <input id="blue" type="checkbox" checked />
+                            <label class="color_label" for="blue">Синий</label>
                         </li>
-                        <li class="color_name"><input id="red" type="checkbox" checked />
-                            <label for="red">Красный</label>
+                        <li class="color_name">
+                            <input id="red" type="checkbox" checked />
+                            <label class="color_label" for="red">Красный</label>
                         </li>
-                        <li class="color_name"><input id="pink" type="checkbox" />
-                            <label for="pink">Розовый</label>
+                        <li class="color_name">
+                            <input id="pink" type="checkbox" />
+                            <label class="color_label" for="pink">Розовый</label>
                         </li>
                     </ul>
 
@@ -150,26 +178,23 @@
                 <div class="filter_bluetooth">
                     <span class="bluetooth_header filter_name">Bluetooth</span>
                     <ul class="bluetooth_choose">
-                        <li>
-                            <label>
-                                <input type="radio" name="bluetooth" value="yes" checked />
-                                Есть
-                            </label>
-                        <li>
-                            <label>
-                                <input type="radio" name="bluetooth" value="no" />
-                                Нет
-                            </label>
+                        <li class="bluetooth_exist">
+                            <input type="radio" name="bluetooth" id="yes" value="yes" checked />
+                            <label class="bluetooth_label" for="yes">Есть</label>
+                        </li>
+                        <li class="bluetooth_exist">
+                            <input type="radio" name="bluetooth" id="no" value="no" />
+                            <label class="bluetooth_label" for="no">Нет</label>
                         </li>
                     </ul>
 
 
                 </div>
-                <div class="filter_show">
-                    <button>
-                        <a class="filter_button work_link" href="#">Показать</a>
+                
+                    <button type="submit" class="filter_button work_link">
+                        Показать
                     </button>
-                </div>
+                
             </div>
         </div>
 

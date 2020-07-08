@@ -21,12 +21,12 @@
     margin-right: 23px;
 }
 
-.link_login {
+.link_out {
     opacity: 30%;
 }
 
 .block_navigation {
-    width: 1040px;
+    width: 1040px;  
     margin: auto;
     margin-top: 0;
     margin-bottom: 50px;
@@ -43,9 +43,29 @@
 
 .branch_navigation {
     font-size: 14px;
-    opacity: 30%;
-    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    margin-right: 30px;
+    position: relative;
+    transition: color 0.3s;
 }
+.branch_navigation:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.branch_navigation:active {
+    color: rgba(0, 0, 0, 0.1)
+}
+.brach_catalog::before,
+.brach_monopods::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 7px;
+    background: url("../img/nav-arrow.png") 0 0 no-repeat;
+    top: 7px;
+    left: -15px;
+}
+
 
 .choose_devices {
     display: grid;
@@ -107,6 +127,7 @@
     padding: 0;
     margin-right: 29px;
     background-color: rgba(235, 235, 235, 0);
+    cursor: pointer;
 }
 
 .sorting_button:hover {
@@ -147,9 +168,9 @@
 .filter_cost,
 .filter_color,
 .filter_bluetooth {
-    width: 201px;
+    width: 200px;
     border-top: 2px solid #000;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .filter_cost {
@@ -206,17 +227,70 @@
 }
 
 
-.choose_color {
+.choose_color,
+.bluetooth_choose {
     font-size: 14px;
+    margin-top: 20px;
 }
 
-.color_name {
+.color_name,
+.bluetooth_exist {
     margin-bottom: 15px;
+    margin-left: 35px;
 }
+.color_name input[type="checkbox"] {
+    display: none;
+}
+.color_label {
+    position: relative;
+    cursor: pointer;
+}
+.color_label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url("../img/color_checkbox-off.png") 0 0 no-repeat;
+    top: -2px;
+    left: -35px;
+    transition: background 0.2s;
+}
+.color_name input[type="checkbox"]:checked ~ .color_label::before {
+    width: 27px;;
+    background: url("../img/color_checkbox-on.png") 0 0 no-repeat;
+  }
 
 .filter_bluetooth {
-    border-bottom: none;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+}
+.bluetooth_choose input[type="radio"] {
+    display: none;
+}
+.bluetooth_label {
+    position: relative;
+    cursor: pointer;
+}
+.bluetooth_label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("../img/bluetooth_radio-off.png") 0 0 no-repeat;
+    top: -2px;
+    left: -35px;
+    transition: background 0.5s;
+}
+.bluetooth_choose input[type="radio"]:checked ~ .bluetooth_label::before {
+    background: url("../img/bluetooth_radio-on.png") 0 0 no-repeat;
+
+}
+.filter_button {
+    border: none;
+    outline: none;
+    width: 200px;
+    cursor: pointer;
 }
 
 .devices_pages {
