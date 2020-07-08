@@ -267,7 +267,6 @@ input::-webkit-search-results-decoration { display: none; }
     width: 580px;
     height: 0;
     opacity: 0;
-    z-index: 1;
     transition-property: height, opacity;
     transition-duration: 1s;
 }

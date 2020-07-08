@@ -152,6 +152,7 @@
 .sorting_arrows {
     border: none;
     outline: none;
+    cursor: pointer;
     padding: 0;
     background-color: rgba(235, 235, 235, 0);
     margin-left: 19px;
@@ -254,7 +255,8 @@
     background: url("../img/color_checkbox-off.png") 0 0 no-repeat;
     top: -2px;
     left: -35px;
-    transition: background 0.2s;
+    transition-property: opacity, background;
+    transition-duration: 0.2s;
 }
 .color_name input[type="checkbox"]:checked ~ .color_label::before {
     width: 27px;;
@@ -280,13 +282,22 @@
     background: url("../img/bluetooth_radio-off.png") 0 0 no-repeat;
     top: -2px;
     left: -35px;
-    transition: background 0.5s;
+    transition-property: opacity, background;
+    transition-duration: 0.5s;
 }
 .bluetooth_choose input[type="radio"]:checked ~ .bluetooth_label::before {
     background: url("../img/bluetooth_radio-on.png") 0 0 no-repeat;
-
 }
-.filter_button {
+.color_name:hover .color_label::before,
+.bluetooth_exist:hover .bluetooth_label::before {
+    opacity: 60%;
+}
+.color_name:active .color_label::before,
+.bluetooth_exist:active .bluetooth_label::before {
+    opacity: 100%;
+}
+.filter_button,
+.basket_button {
     border: none;
     outline: none;
     width: 200px;
@@ -301,6 +312,7 @@
 
 .display_box {
     width: 360px;
+    position: relative;
 }
 
 .device_subscription {
@@ -321,6 +333,51 @@
     display: block;
     width: 254px;
 }
+.device_addition_box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    top: 170px;
+    left: 80px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+.basket_button {
+    margin-bottom: 10px;
+}
+.compare_button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-style: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.device_selection img {
+    transition: opacity 0.7s;
+}
+.compare_button:hover {
+    color: rgba(0, 0, 0, 1);
+}
+.compare_button:active {
+    color: rgba(0, 0, 0, 0.2);
+}
+.device_selection:hover + .device_addition_box {
+    opacity: 100%;
+    z-index: 2; 
+}
+
+.device_selection:hover img {
+    opacity: 70%;
+}
+
+.device_addition_box:hover {
+    opacity: 100%;
+    z-index: 2;
+}
 
 .page_selection {
     display: flex;
@@ -334,6 +391,7 @@
     border: none;
     outline: none;
     padding: 0;
+    cursor: pointer;
     background-color: rgba(235, 235, 235, 0);
 
 }
