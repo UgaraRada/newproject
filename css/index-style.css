@@ -6,6 +6,27 @@
     width: 1160px;
     display: flex;
     margin-bottom: 105px;
+    position: relative;
+}
+.preview_block::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 7px;
+    background-color: white;
+    top: -67px;
+    right: 480px;
+}
+.preview_block::after {
+    content: '01';
+    position: absolute;
+    font-family: Gilroy;
+    font-size: 179.2px;
+    font-weight: bold;
+    color: white;
+    top: -50px;
+    right: 81px;
 }
 .preview_img,
 .description {
@@ -42,8 +63,8 @@
 }
 
 .description_link {
-    margin-right: auto; 
-    width: 220px; 
+    margin-right: auto;
+    width: 220px;
 }
 
 .descriptoin_buttons {
@@ -53,29 +74,27 @@
 .preview_radio_block {
     padding-left: 21px;
 }
-.preview_radio_block input[type=radio] {
+.preview_radio_block input[type='radio'] {
     display: none;
 }
 .preview_radio_block label {
     position: relative;
     cursor: pointer;
     margin-left: 21px;
-    /* padding-left: 21px; */
-
 }
 .preview_radio_block label::before {
     position: absolute;
-    content: "";
-	width: 12px;
-	height: 12px;
-	left: -15px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    left: -15px;
     bottom: 4px;
-    background: url("../img/slider-button-empty.png") 0 0 no-repeat ;
+    background: url('../img/slider-button-empty.png') 0 0 no-repeat;
     transition: background 0.4s;
 }
 .preview_radio:checked ~ label::before {
-    background: url("../img/slider-button.png") 0 0 no-repeat;
-  }
+    background: url('../img/slider-button.png') 0 0 no-repeat;
+}
 
 .characteristics {
     display: flex;
@@ -121,7 +140,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 35px;
-    transition:background-color 0.4s;
+    transition: background-color 0.4s;
 }
 .device_picture img {
     transition: opacity 0.3s;
@@ -163,7 +182,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.services_buttons input[type=radio] {
+.services_buttons input[type='radio'] {
     display: none;
 }
 .service_button_label {
@@ -177,14 +196,14 @@
     z-index: 1;
     justify-content: center;
     align-items: center;
-    background: url("../img/background_work_link.png") 0 0 no-repeat;
+    background: url('../img/background_work_link.png') 0 0 no-repeat;
     background-size: 100% 8px;
     background-position-y: center;
     transition-property: color, background-size;
     transition-duration: 0.3s;
 }
 .service_button_label::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     height: 40px;
@@ -198,12 +217,11 @@
     background-size: 100% 100%;
 }
 .service_choose_button:checked + .service_button_label {
-    color: rgb(247, 225, 132) ;
+    color: rgb(247, 225, 132);
 }
 .service_choose_button:checked ~ .service_button_label::after {
     width: 278px;
 }
-
 
 .services_delivery {
     width: 850px;
@@ -238,26 +256,28 @@
     transition: background 0.3s;
 }
 .dji {
-    background: url("../img/dji.png") 0 0 no-repeat;
+    background: url('../img/dji.png') 0 0 no-repeat;
 }
 .dji:hover {
-    background: url("../img/dji_color.png") 0 0 no-repeat; 
+    background: url('../img/dji_color.png') 0 0 no-repeat;
 }
 .spGadget {
-    background: url("../img/spGadget.png") 0 0 no-repeat;
+    background: url('../img/spGadget.png') 0 0 no-repeat;
 }
 .spGadget:hover {
-    background: url("../img/spGadget_color.png") 0 0 no-repeat; 
-}.gopro {
-    background: url("../img/gopro.png") 0 0 no-repeat;
+    background: url('../img/spGadget_color.png') 0 0 no-repeat;
+}
+.gopro {
+    background: url('../img/gopro.png') 0 0 no-repeat;
 }
 .gopro:hover {
-    background: url("../img/gopro_color.png") 0 0 no-repeat; 
-}.vive {
-    background: url("../img/vive.png") 0 0 no-repeat;
+    background: url('../img/gopro_color.png') 0 0 no-repeat;
+}
+.vive {
+    background: url('../img/vive.png') 0 0 no-repeat;
 }
 .vive:hover {
-    background: url("../img/vive_color.png") 0 0 no-repeat; 
+    background: url('../img/vive_color.png') 0 0 no-repeat;
 }
 .store_info {
     display: flex;
@@ -268,6 +288,17 @@
     width: 580px;
     padding-top: 59px;
     padding-bottom: 90px;
+    position: relative;
+}
+.about_us::before,
+.contacts::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 7px;
+    background-color: black;
+    top: 0;
 }
 
 .about_us .heading,
@@ -284,9 +315,7 @@
     font-weight: bold;
     font-family: Gilroy;
     margin-top: 50px;
-    /* list-style-image: url("../img/trans_company_marker.png"); */
     list-style-type: circle;
-    
 }
 
 .trans_company li {
