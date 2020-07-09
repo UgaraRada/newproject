@@ -7,9 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="css/index-style.css" rel="stylesheet" />
     <link href="css/common-style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
     <title>Device</title>
 </head>
+
+<!-- поставь один таб в отступ в настройках вместо двух -->
+<!-- нет паддингов у контейнера, можешь 0 20px добавить -->
+<!-- https://up.htmlacademy.ru/htmlcss/17/criteries - сверься самостоятельно -->
+<!-- http://validator.w3.org/ - закинь свой html сюда и поправь ошибки-->
+<!-- а так норм ) -->
 
 <body>
     <div class="container">
@@ -18,32 +24,36 @@
                 device
             </a>
             <nav class="main_header_top">
-                <div class="m_h_t_left">
-                    <form class="search_site" action="#" name="search_site">
-                        <img src="img/search.png" class="search_label" width="16px" height="16px">
-                        <input type="search" class="input_search" placeholder="Поиск по сайту" />
-                        <button type="submit" class="button_search">Найти</button>
-                    </form>
-                </div>
-                <div class="m_h_t_right">
-                    <ul class="main_header_top_userblock">
-                        <li class="link_user link_login">
-                            <a href="#" class="link_user link_login">
-                                <img src="img/user_header.png" class="user_label" width="13px" height="12px">
-                                Войти</a>
-                        </li>
-                        <li class="link_user link_compare">
-                            <a href="#">
-                                <img src="img/compare_header.png" class="user_label" width="10px" height="10px">
-                                Сравнить</a>
-                        </li>
-                        <li class="link_user link_basket">
-                            <a href="#">
-                                <img src="img/basket_header.png" class="user_label" width="12px" height="12px">
-                                Корзина</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- что такое m_h_t_left - называй классы так, чтобы было понятно для всех ) main_header_top_left норм -->
+                <!-- подробнее про наименования классов потом будет -->
+                <!-- <div class="m_h_t_left"> -->
+                    <!-- В теории это форма, но на практике ради одного инпута - лишнее -->
+                <form class="m_h_t_left search_site" action="#" name="search_site">
+                    <img src="img/search.png" class="search_label" width="16px" height="16px">
+                    <input type="search" class="input_search" placeholder="Поиск по сайту" />
+                    <button type="submit" class="button_search">Найти</button>
+                </form>
+                <!-- </div> -->
+                <!-- лишняя обертка -->
+                <!-- <div class="m_h_t_right"> -->
+                <ul class="m_h_t_right main_header_top_userblock">
+                    <li class="link_user link_login">
+                        <a href="#" class="link_user link_login">
+                            <img src="img/user_header.png" class="user_label" width="13px" height="12px">
+                            Войти</a>
+                    </li>
+                    <li class="link_user link_compare">
+                        <a href="#">
+                            <img src="img/compare_header.png" class="user_label" width="10px" height="10px">
+                            Сравнить</a>
+                    </li>
+                    <li class="link_user link_basket">
+                        <a href="#">
+                            <img src="img/basket_header.png" class="user_label" width="12px" height="12px">
+                            Корзина</a>
+                    </li>
+                </ul>
+                <!-- </div> -->
             </nav>
 
             <nav class="main_header_bottom">
@@ -52,7 +62,9 @@
                         Каталог товаров
                         <img src="img/plus.png" class="catalog_plus" width="16px" height="16px">
                     </a>
-                    <div class="drop_down_menu_block">
+                    <!-- одна обертка явно лишняя -->
+                    <nav class="drop_down_menu_block">
+                        <!-- почему наверху для навигации nav и ul > li, а тут нет? Выбери что-то одно -->
                         <div class="drop_menu_navigation">
                             <a href="#" class="menu_nav_link men_vir_real">Виртуальная реальность</a>
                             <a href="#" class="menu_nav_link men_fit_brace">Фитнес-браслеты</a>
@@ -61,8 +73,9 @@
                             <a href="#" class="menu_nav_link men_smart_watch">Умные часы</a>
                             <a href="#" class="menu_nav_link men_act_cam">Экшн-камеры</a>
                         </div>
-                    </div>
+                    </nav>
                 </div>
+                <!-- можно <ul class="m_h_b_right main_navigation">, опять лишняя обертка -->
                 <div class="m_h_b_right">
                     <ul class="main_navigation">
                         <li class="link_navigation link_delivery">
@@ -85,6 +98,7 @@
                     <img src="img/stick.png" width="384" height="486" />
                 </div>
                 <div class="description">
+                    <!-- лишняя обертка - <div class="description_slogan heading">-->
                     <div class="description_slogan">
                         <span class="heading">
                             Делай селфи,
@@ -97,6 +111,7 @@
                     </p>
                     <div class="description_control">
                         <a class="description_link work_link" href="#">Подробнее</a>
+                        <!-- короче в этом макете все сделай через ul > li в учебных целях, а потом без них ебошь - верстка будет короче -->
                         <ul class="descriptoin_buttons">
                             <li class="preview_radio_block">
                                 <input class="preview_radio" name="preview_product" type="radio" value="" id="list_1"
@@ -159,6 +174,7 @@
                 </li>
                 <li class="devices_boxes">
                     <a href="#" class="devices_link">
+                        <!-- почему не <img class="device_picture" src="img/fitness bracelets.png" width="107" height="65" /> -->
                         <div class="device_picture">
                             <img src="img/fitness bracelets.png" width="107" height="65" />
                         </div>
@@ -186,6 +202,7 @@
     </div>
     <div class="services_background">
         <div class="services">
+          <!-- лишняя обертка -->
             <div class="services_box">
                 <ul class="services_buttons">
                     <li>
@@ -254,6 +271,7 @@
                 <img src="img/facking map.png" width="560px" height="222px" />
                 <a class="info_link work_link" href="#">напишите нам</a>
             </div>
+        <!-- шо это такое )  -->
         </div>
         </main>
     </div>
