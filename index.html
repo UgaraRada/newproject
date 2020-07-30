@@ -2,341 +2,329 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="css/index-style.css" rel="stylesheet" />
-    <link href="css/common-style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <title>Device</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="css/index-style.css" rel="stylesheet" />
+  <link href="css/common-style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <title>Device</title>
 </head>
 
-<!-- поставь один таб в отступ в настройках вместо двух -->
-<!-- нет паддингов у контейнера, можешь 0 20px добавить -->
+
 <!-- https://up.htmlacademy.ru/htmlcss/17/criteries - сверься самостоятельно -->
 <!-- http://validator.w3.org/ - закинь свой html сюда и поправь ошибки-->
 <!-- а так норм ) -->
 
 <body>
-    <div class="container">
-        <header class="main_header">
-            <a class="main_header_logo logo" href="#">
-                device
-            </a>
-            <nav class="main_header_top">
-                <!-- что такое m_h_t_left - называй классы так, чтобы было понятно для всех ) main_header_top_left норм -->
-                <!-- подробнее про наименования классов потом будет -->
-                <!-- <div class="m_h_t_left"> -->
-                    <!-- В теории это форма, но на практике ради одного инпута - лишнее -->
-                <form class="m_h_t_left search_site" action="#" name="search_site">
-                    <img src="img/search.png" class="search_label" width="16px" height="16px">
-                    <input type="search" class="input_search" placeholder="Поиск по сайту" />
-                    <button type="submit" class="button_search">Найти</button>
-                </form>
-                <!-- </div> -->
-                <!-- лишняя обертка -->
-                <!-- <div class="m_h_t_right"> -->
-                <ul class="m_h_t_right main_header_top_userblock">
-                    <li class="link_user link_login">
-                        <a href="#" class="link_user link_login">
-                            <img src="img/user_header.png" class="user_label" width="13px" height="12px">
-                            Войти</a>
-                    </li>
-                    <li class="link_user link_compare">
-                        <a href="#">
-                            <img src="img/compare_header.png" class="user_label" width="10px" height="10px">
-                            Сравнить</a>
-                    </li>
-                    <li class="link_user link_basket">
-                        <a href="#">
-                            <img src="img/basket_header.png" class="user_label" width="12px" height="12px">
-                            Корзина</a>
-                    </li>
-                </ul>
-                <!-- </div> -->
-            </nav>
-
-            <nav class="main_header_bottom">
-                <div class="m_h_b_left">
-                    <a class="link_navigation link_catalog" href="#">
-                        Каталог товаров
-                        <img src="img/plus.png" class="catalog_plus" width="16px" height="16px">
-                    </a>
-                    <!-- одна обертка явно лишняя -->
-                    <nav class="drop_down_menu_block">
-                        <!-- почему наверху для навигации nav и ul > li, а тут нет? Выбери что-то одно -->
-                        <div class="drop_menu_navigation">
-                            <a href="#" class="menu_nav_link men_vir_real">Виртуальная реальность</a>
-                            <a href="#" class="menu_nav_link men_fit_brace">Фитнес-браслеты</a>
-                            <a href="#" class="menu_nav_link men_quadrocopt">Квадракоптеры</a>
-                            <a href="#" class="menu_nav_link men_mon_for_sel">Моноподы для селфи</a>
-                            <a href="#" class="menu_nav_link men_smart_watch">Умные часы</a>
-                            <a href="#" class="menu_nav_link men_act_cam">Экшн-камеры</a>
-                        </div>
-                    </nav>
-                </div>
-                <!-- можно <ul class="m_h_b_right main_navigation">, опять лишняя обертка -->
-                <div class="m_h_b_right">
-                    <ul class="main_navigation">
-                        <li class="link_navigation link_delivery">
-                            <a href="#">Доставка</a>
-                        </li>
-                        <li class="link_navigation link_guaranee">
-                            <a href="#">Гарантия</a>
-                        </li>
-                        <li class="link_navigation link_contaсs">
-                            <a href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
-        </header>
-        <main class="opening_main">
-            <div class="preview_block">
-                <div class="preview_img">
-                    <img src="img/stick.png" width="384" height="486" />
-                </div>
-                <div class="description">
-                    <!-- лишняя обертка - <div class="description_slogan heading">-->
-                    <div class="description_slogan">
-                        <span class="heading">
-                            Делай селфи,
-                            как Бен Стиллер!
-                        </span>
-                    </div>
-                    <p class="description_text">
-                        Самая длинная палка для селфи доступна в нашем магазине.
-                        Восемь(Восемь, Карл!) метров длинной и весом всего 5 килограмм.
-                    </p>
-                    <div class="description_control">
-                        <a class="description_link work_link" href="#">Подробнее</a>
-                        <!-- короче в этом макете все сделай через ul > li в учебных целях, а потом без них ебошь - верстка будет короче -->
-                        <ul class="descriptoin_buttons">
-                            <li class="preview_radio_block">
-                                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_1"
-                                    checked />
-                                <label for="list_1"></label>
-                            </li>
-                            <li class="preview_radio_block">
-                                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_2" />
-                                <label for="list_2"></label>
-                            </li>
-                            <li class="preview_radio_block">
-                                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_3" />
-                                <label for="list_3"></label>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="characteristics">
-                        <li>
-                            <p class="characteristic_value">8,5 м</p>
-                            <p class="characteristic_text">Длина палки</p>
-                        </li>
-                        <li>
-                            <p class="characteristic_value">5 кг</p>
-                            <p class="characteristic_text">Вес палки</p>
-                        </li>
-                        <li>
-                            <p class="characteristic_value">Карбон</p>
-                            <p class="characteristic_text">Материал</p>
-                        </li>
-                    </ul>
-                </div>
+  <div class="container">
+    <header class="main_header">
+      <a class="main_header_logo logo" href="#">
+        device
+      </a>
+      <nav class="main_header_top">
+        <div class="main_header_top_left search_site">
+          <img src="img/search.png" class="search_label" width="16px" height="16px">
+          <input type="search" class="input_search" placeholder="Поиск по сайту" />
+          <button type="submit" class="button_search">Найти</button>
+        </div>
+        <ul class="main_header_top_right main_header_top_userblock">
+          <li class="link_user link_login">
+            <a href="#" class="link_user link_login">
+              <img src="img/user_header.png" class="user_label" width="13px" height="12px">
+              Войти</a>
+          </li>
+          <li class="link_user link_compare">
+            <a href="#">
+              <img src="img/compare_header.png" class="user_label" width="10px" height="10px">
+              Сравнить</a>
+          </li>
+          <li class="link_user link_basket">
+            <a href="#">
+              <img src="img/basket_header.png" class="user_label" width="12px" height="12px">
+              Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main_header_bottom">
+        <div class="main_header_bottom_left">
+          <a class="link_navigation link_catalog" href="#">
+            Каталог товаров
+            <img src="img/plus.png" class="catalog_plus" width="16px" height="16px">
+          </a>
+          <!-- одна обертка явно лишняя -->
+          <nav class="drop_down_menu_block">
+            <!-- почему наверху для навигации nav и ul > li, а тут нет? Выбери что-то одно -->
+            <div class="drop_menu_navigation">
+              <a href="#" class="menu_nav_link men_vir_real">Виртуальная реальность</a>
+              <a href="#" class="menu_nav_link men_fit_brace">Фитнес-браслеты</a>
+              <a href="#" class="menu_nav_link men_quadrocopt">Квадракоптеры</a>
+              <a href="#" class="menu_nav_link men_mon_for_sel">Моноподы для селфи</a>
+              <a href="#" class="menu_nav_link men_smart_watch">Умные часы</a>
+              <a href="#" class="menu_nav_link men_act_cam">Экшн-камеры</a>
             </div>
+          </nav>
+        </div>
+        <!-- можно <ul class="m_h_b_right main_navigation">, опять лишняя обертка -->
+        <div class="main_header_bottom_right">
+          <ul class="main_navigation">
+            <li class="link_navigation link_delivery">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="link_navigation link_guaranee">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="link_navigation link_contaсs">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
 
-            <ul class="devices">
-                <li class="devices_boxes">
-                    <a href="#" class="devices_link">
-                        <div class="device_picture">
-                            <img src="img/virtual_reality.png" width="97px" height="55px" />
-                        </div>
-                        Виртуальная
-                        реальность
-                    </a>
-                </li>
-                <li class="devices_boxes">
-                    <a href="#" class="devices_link">
-                        <div class="device_picture">
-                            <img src="img/monopods for selfie.png" width="86" height="117" />
-                        </div>
-                        Моноподы
-                        для селфи
-                    </a>
-                </li>
-                <li class="devices_boxes">
-                    <a href="#" class="devices_link">
-                        <div class="device_picture">
-                            <img src="img/action camera.png" width="71" height="87" />
-                        </div>
-                        Экшн-камеры
-                    </a>
-                </li>
-                <li class="devices_boxes">
-                    <a href="#" class="devices_link">
-                        <!-- почему не <img class="device_picture" src="img/fitness bracelets.png" width="107" height="65" /> -->
-                        <div class="device_picture">
-                            <img src="img/fitness bracelets.png" width="107" height="65" />
-                        </div>
-                        Фитнес-браслеты
-                    </a>
-                </li>
-                <li class="devices_boxes">
-                    <a href="#" class="devices_link">
-                        <div class="device_picture">
-                            <img src="img/smart watch.png" width="56" height="98" />
-                        </div>
-                        Умные часы
-                    </a>
-                </li>
-                <li class="devices_boxes">
-                    <a href="#" class="devices_link">
-                        <div class="device_picture">
-                            <img src="img/quadrocopters.png" width="132" height="69" />
-                        </div>
-                        Квадракоптеры
-                    </a>
-                </li>
+      </nav>
+    </header>
+    <main class="opening_main">
+      <div class="preview_block">
+        <div class="preview_img">
+          <img src="img/stick.png" width="384" height="486" />
+        </div>
+        <div class="description">
+          <!-- лишняя обертка - <div class="description_slogan heading">-->
+          <div class="description_slogan">
+            <span class="heading">
+              Делай селфи,
+              как Бен Стиллер!
+            </span>
+          </div>
+          <p class="description_text">
+            Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь(Восемь, Карл!) метров длинной и весом всего 5 килограмм.
+          </p>
+          <div class="description_control">
+            <a class="description_link work_link" href="#">Подробнее</a>
+            <!-- короче в этом макете все сделай через ul > li в учебных целях, а потом без них ебошь - верстка будет короче -->
+            <ul class="descriptoin_buttons">
+              <li class="preview_radio_block">
+                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_1" checked />
+                <label for="list_1"></label>
+              </li>
+              <li class="preview_radio_block">
+                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_2" />
+                <label for="list_2"></label>
+              </li>
+              <li class="preview_radio_block">
+                <input class="preview_radio" name="preview_product" type="radio" value="" id="list_3" />
+                <label for="list_3"></label>
+              </li>
             </ul>
-    </div>
-    </div>
-    <div class="services_background">
-        <div class="services">
-          <!-- лишняя обертка -->
-            <div class="services_box">
-                <ul class="services_buttons">
-                    <li>
-                        <input class="service_choose_button" name="services" type="radio" value="" id="delivery"
-                            checked />
-                        <label for="delivery" class="service_button_label">Доставка</label>
-                    </li>
-                    <li>
-                        <input class="service_choose_button" name="services" type="radio" value="" id="guarantee" />
-                        <label for="guarantee" class="service_button_label">Гарантия</label>
-                    </li>
-
-                    <li>
-                        <input class="service_choose_button" name="services" type="radio" value="" id="credit" />
-                        <label for="credit" class="service_button_label">Кредит</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="services_delivery">
-                <h2 class="heading_delivery heading">Доставка</h2>
-                <p class="delivery_text">
-                    Мы с удовольствием доставим ваш товар прямо к вашему
-                    подъезду совершенно бессплатно! Ведь мы неплохо
-                    заработаем, поднимая его на ваш этаж.
-                </p>
-                <img src="img/delivery.png" width="136" height="164" />
-            </div>
+          </div>
+          <ul class="characteristics">
+            <li>
+              <p class="characteristic_value">8,5 м</p>
+              <p class="characteristic_text">Длина палки</p>
+            </li>
+            <li>
+              <p class="characteristic_value">5 кг</p>
+              <p class="characteristic_text">Вес палки</p>
+            </li>
+            <li>
+              <p class="characteristic_value">Карбон</p>
+              <p class="characteristic_text">Материал</p>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <ul class="devices">
+        <li class="devices_boxes">
+          <a href="#" class="devices_link">
+            <div class="device_picture">
+              <img src="img/virtual_reality.png" width="97px" height="55px" />
+            </div>
+            Виртуальная
+            реальность
+          </a>
+        </li>
+        <li class="devices_boxes">
+          <a href="#" class="devices_link">
+            <div class="device_picture">
+              <img src="img/monopods for selfie.png" width="86" height="117" />
+            </div>
+            Моноподы
+            для селфи
+          </a>
+        </li>
+        <li class="devices_boxes">
+          <a href="#" class="devices_link">
+            <div class="device_picture">
+              <img src="img/action camera.png" width="71" height="87" />
+            </div>
+            Экшн-камеры
+          </a>
+        </li>
+        <li class="devices_boxes">
+          <a href="#" class="devices_link">
+            <!-- почему не <img class="device_picture" src="img/fitness bracelets.png" width="107" height="65" /> -->
+            <div class="device_picture">
+              <img src="img/fitness bracelets.png" width="107" height="65" />
+            </div>
+            Фитнес-браслеты
+          </a>
+        </li>
+        <li class="devices_boxes">
+          <a href="#" class="devices_link">
+            <div class="device_picture">
+              <img src="img/smart watch.png" width="56" height="98" />
+            </div>
+            Умные часы
+          </a>
+        </li>
+        <li class="devices_boxes">
+          <a href="#" class="devices_link">
+            <div class="device_picture">
+              <img src="img/quadrocopters.png" width="132" height="69" />
+            </div>
+            Квадракоптеры
+          </a>
+        </li>
+      </ul>
+  </div>
+  </div>
+  <div class="services_background">
+    <div class="services">
+      <!-- лишняя обертка -->
+      <div class="services_box">
+        <ul class="services_buttons">
+          <li>
+            <input class="service_choose_button" name="services" type="radio" value="" id="delivery" checked />
+            <label for="delivery" class="service_button_label">Доставка</label>
+          </li>
+          <li>
+            <input class="service_choose_button" name="services" type="radio" value="" id="guarantee" />
+            <label for="guarantee" class="service_button_label">Гарантия</label>
+          </li>
+
+          <li>
+            <input class="service_choose_button" name="services" type="radio" value="" id="credit" />
+            <label for="credit" class="service_button_label">Кредит</label>
+          </li>
+        </ul>
+      </div>
+      <div class="services_delivery">
+        <h2 class="heading_delivery heading">Доставка</h2>
+        <p class="delivery_text">
+          Мы с удовольствием доставим ваш товар прямо к вашему
+          подъезду совершенно бессплатно! Ведь мы неплохо
+          заработаем, поднимая его на ваш этаж.
+        </p>
+        <img src="img/delivery.png" width="136" height="164" />
+      </div>
     </div>
+  </div>
+  <div class="container">
+    <div class="companies">
+      <div class="companies_boxes dji"></div>
+      <div class="companies_boxes spGadget"></div>
+      <div class="companies_boxes gopro"></div>
+      <div class="companies_boxes vive"></div>
+    </div>
+
+    <div class="store_info">
+      <div class="about_us">
+        <h2 class="heading">О нас</h2>
+
+        <p class="about_us_info">
+          Огромный выбор гаджетов не оставит равнодушным гика,
+          который есть в каждом из нас
+        </p>
+
+        <p class="about_us_info">
+          Мы можем доставить товар в саммые отдаленные точки
+          России! DEVICE работает со многими транспортными компаниями:
+        </p>
+
+        <ul class="trans_company">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="info_link work_link" href="#">подробнее о нас</a>
+      </div>
+      <div class="contacts">
+        <h2 class="heading">Контакты</h2>
+        <p class="contacts_info">
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.
+        </p>
+
+        <img src="img/facking map.png" width="560px" height="222px" />
+        <a class="info_link work_link" href="#">напишите нам</a>
+      </div>
+      <!-- шо это такое )  -->
+    </div>
+    </main>
+  </div>
+  <footer class="main_footer">
     <div class="container">
-        <div class="companies">
-            <div class="companies_boxes dji"></div>
-            <div class="companies_boxes spGadget"></div>
-            <div class="companies_boxes gopro"></div>
-            <div class="companies_boxes vive"></div>
-        </div>
-
-        <div class="store_info">
-            <div class="about_us">
-                <h2 class="heading">О нас</h2>
-
-                <p class="about_us_info">
-                    Огромный выбор гаджетов не оставит равнодушным гика,
-                    который есть в каждом из нас
-                </p>
-
-                <p class="about_us_info">
-                    Мы можем доставить товар в саммые отдаленные точки
-                    России! DEVICE работает со многими транспортными компаниями:
-                </p>
-
-                <ul class="trans_company">
-                    <li>Деловые линии</li>
-                    <li>Автотрейдинг</li>
-                    <li>ЖелДорЭкспедиция</li>
-                </ul>
-                <a class="info_link work_link" href="#">подробнее о нас</a>
-            </div>
-            <div class="contacts">
-                <h2 class="heading">Контакты</h2>
-                <p class="contacts_info">
-                    Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-                    проверить работоспособность покупки. Всякое бывает.
-                </p>
-
-                <img src="img/facking map.png" width="560px" height="222px" />
-                <a class="info_link work_link" href="#">напишите нам</a>
-            </div>
-        <!-- шо это такое )  -->
-        </div>
-        </main>
+      <nav class="main_footer_top">
+        <a class="main_footer_logo logo" href="#">device</a>
+        <ul class="main_footer_userblock">
+          <li>
+            <a class="link_user_bottom login" href="#">
+              <img src="img/user_bottom.png" class="user_label_bottom" width="13px" height="12px">Войти</a>
+          </li>
+          <li>
+            <a class="link_user_bottom compare" href="#">
+              <img src="img/compare_bottom.png" class="user_label_bottom" width="10px" height="10px">
+              Сравнить</a>
+          </li>
+          <li>
+            <a class="link_user_bottom basket" href="#">
+              <img src="img/basket_bottom.png" class="user_label_bottom" width="12px" height="12px">
+              Корзина</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main_footer_center">
+        <span class="main_footer_adress">г.Москва, ул. Строителей, 15</span>
+        <ul class="main_footer_navigation">
+          <li>
+            <a href="#" class="footer_navigation_link link_navigation">Доставка</a>
+          </li>
+          <li>
+            <a href="#" class="footer_navigation_link link_navigation">Гарантия</a>
+          </li>
+          <li>
+            <a href="#" class="footer_navigation_link link_navigation">Контакты</a>
+          </li>
+        </ul>
+        <span class="number">Тел.: +7(495)495-95-95</span>
+      </div>
+      <div class="main_footer_bottom">
+        <div class="style_line_bottom"></div>
+        <ul class="main_footer_social">
+          <li>
+            <a href="#" class="fb social_link">
+              <img src="img/badge for facebook.png" width="32px" height="32px">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="inst social_link">
+              <img src="img/badge for instagram.png" width="32px" height="32px">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tw social_link">
+              <img src="img/badge for twitter.png" width="32px" height="32px">
+            </a>
+          </li>
+        </ul>
+        <a class="link_htmlacadem" href="https://htmlacademy.ru/">
+          <img src="img/logo-html.png" width="27px" height="35px">
+        </a>
+      </div>
     </div>
-    <footer class="main_footer">
-        <div class="container">
-            <nav class="main_footer_top">
-                <a class="main_footer_logo logo" href="#">device</a>
-                <ul class="main_footer_userblock">
-                    <li>
-                        <a class="link_user_bottom login" href="#">
-                            <img src="img/user_bottom.png" class="user_label_bottom" width="13px"
-                                height="12px">Войти</a>
-                    </li>
-                    <li>
-                        <a class="link_user_bottom compare" href="#">
-                            <img src="img/compare_bottom.png" class="user_label_bottom" width="10px" height="10px">
-                            Сравнить</a>
-                    </li>
-                    <li>
-                        <a class="link_user_bottom basket" href="#">
-                            <img src="img/basket_bottom.png" class="user_label_bottom" width="12px" height="12px">
-                            Корзина</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="main_footer_center">
-                <span class="main_footer_adress">г.Москва, ул. Строителей, 15</span>
-                <ul class="main_footer_navigation">
-                    <li>
-                        <a href="#" class="footer_navigation_link link_navigation">Доставка</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer_navigation_link link_navigation">Гарантия</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer_navigation_link link_navigation">Контакты</a>
-                    </li>
-                </ul>
-                <span class="number">Тел.: +7(495)495-95-95</span>
-            </div>
-            <div class="main_footer_bottom">
-                <div class="style_line_bottom"></div>
-                <ul class="main_footer_social">
-                    <li>
-                        <a href="#" class="fb social_link">
-                            <img src="img/badge for facebook.png" width="32px" height="32px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="inst social_link">
-                            <img src="img/badge for instagram.png" width="32px" height="32px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="tw social_link">
-                            <img src="img/badge for twitter.png" width="32px" height="32px">
-                        </a>
-                    </li>
-                </ul>
-                <a class="link_htmlacadem" href="https://htmlacademy.ru/">
-                    <img src="img/logo-html.png" width="27px" height="35px">
-                </a>
-            </div>
-        </div>
-    </footer>
+  </footer>
 </body>
 
 </html>
