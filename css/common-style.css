@@ -1,18 +1,17 @@
 @font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy.ttf");
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy.ttf');
 }
 
 @font-face {
-  font-family: "GilroyExtraBold";
-  src: url("../fonts/Gilroy\ ExtraBold.otf");
+  font-family: 'GilroyExtraBold';
+  src: url('../fonts/Gilroy\ ExtraBold.otf');
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/Open\ Sans.ttf");
+  font-family: 'Open Sans';
+  src: url('../fonts/Open\ Sans.ttf');
 }
-
 
 /* https://up.htmlacademy.ru/htmlcss/17/criteries#basic-10 */
 body {
@@ -37,7 +36,7 @@ ul {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -49,7 +48,6 @@ ul {
   font-size: 18px;
   font-family: GilroyExtraBold;
   letter-spacing: 0.2em;
-
 }
 
 .logo {
@@ -71,7 +69,6 @@ ul {
 .heading {
   font-size: 47px;
   color: black;
-  font-weight: bold;
   font-family: GilroyExtraBold;
 }
 
@@ -85,7 +82,7 @@ ul {
   height: 40px;
   justify-content: center;
   align-items: center;
-  background: url("../img/background_work_link.png") 0 0 no-repeat;
+  background: url('../img/background_work_link.png') 0 0 no-repeat;
   background-size: 100% 8px;
   background-position-y: center;
   transition-property: color, background-size;
@@ -98,7 +95,7 @@ ul {
 
 .work_link:active {
   background-size: 100% 100%;
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .devices_link,
@@ -110,10 +107,8 @@ ul {
 
 .main_header {
   margin-top: 40px;
-  padding-top: 0px;
   background-color: rgb(247, 226, 150);
   padding-top: 1px;
-
 }
 
 .main_header_logo {
@@ -132,7 +127,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
 }
 
 .main_header_top {
@@ -191,7 +185,6 @@ input::-webkit-input-placeholder {
   opacity: 60%;
 }
 
-
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
@@ -223,7 +216,7 @@ input::-webkit-search-results-decoration {
   right: 0;
   background-color: black;
   transition-duration: 0.7s;
-  content: "";
+  content: '';
 }
 
 .input_search:focus+.button_search {
@@ -245,7 +238,6 @@ input::-webkit-search-results-decoration {
   z-index: 2;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .link_compare,
 .link_basket {
@@ -291,16 +283,12 @@ input::-webkit-search-results-decoration {
   max-height: 0;
   transition: all 0.7s;
   overflow: hidden;
-}
-
-.drop_menu_navigation {
   display: grid;
-  width: 580px;
-  padding-top: 15px;
+  margin-top: 10px;
   grid-template-areas:
-    "v_r f_b qua"
-    "m_f_s s_w ."
-    "act_cam . .";
+    'v_r f_b qua'
+    'm_f_s s_w .'
+    'act_cam . .';
 }
 
 .link_catalog:hover+.drop_down_menu_block,
@@ -308,13 +296,13 @@ input::-webkit-search-results-decoration {
   max-height: 120px;
   opacity: 1;
   transition: all 0.7s;
+
 }
 
 .menu_nav_link {
   display: block;
   margin-right: 45px;
   margin-bottom: 5px;
-
 }
 
 .men_vir_real {
@@ -402,18 +390,17 @@ input::-webkit-search-results-decoration {
   opacity: 30%;
 }
 
-
 .main_footer_userblock li {
   display: inline-block;
   margin-left: 60px;
-
 }
-
 
 .main_footer_center {
   margin-bottom: 70px;
 }
-
+.main_footer_adress {
+  font-style: normal;
+}
 .main_footer_navigation {
   display: flex;
 }
@@ -421,16 +408,24 @@ input::-webkit-search-results-decoration {
 .main_footer_navigation li {
   margin-right: 38px;
 }
-
-.main_footer_social {
-  display: flex;
+.number {
+  color: white;
 }
-
-.style_line_bottom {
+.main_footer_bottom {
+  position: relative;
+}
+.main_footer_bottom:before {
+  content: "";
+  position: absolute;
   width: 80px;
   height: 7px;
   background-color: rgb(255, 198, 0);
 }
+.main_footer_social {
+  display: flex;
+  margin-left: 510px;
+}
+
 
 .social_link {
   margin-left: 22px;
