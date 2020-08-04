@@ -281,7 +281,7 @@ input::-webkit-search-results-decoration {
   width: 580px;
   opacity: 0;
   max-height: 0;
-  transition: all 0.7s;
+  transition: all 1s;
   overflow: hidden;
   display: grid;
   margin-top: 10px;
@@ -295,7 +295,7 @@ input::-webkit-search-results-decoration {
 .drop_down_menu_block:hover {
   max-height: 120px;
   opacity: 1;
-  transition: all 0.7s;
+  transition: all 1s;
 
 }
 

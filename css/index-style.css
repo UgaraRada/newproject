@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 .main_header {
   padding-bottom: 160px;
 }
@@ -349,16 +350,28 @@
 }
 
 .trans_company {
-  padding-left: 25px;
+  padding-left: 40px;
   font-size: 18px;
   font-weight: bold;
   font-family: GilroyExtraBold;
   margin-top: 50px;
-  list-style-type: circle;
+  list-style: none;
 }
 
 .trans_company li {
   margin-bottom: 20px;
+  position: relative;
+}
+
+.trans_company li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  top: 11px;
+  left: -40px;
+  background-image: url(../img/slider_button_trans_company.png);
 }
 
 .trans_company li:last-child {
