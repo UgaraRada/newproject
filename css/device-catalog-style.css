@@ -13,7 +13,7 @@
 }
 
 .main_header {
-  padding-bottom: 50px;
+  padding-bottom: 38px;
   margin-bottom: 44px;
 }
 
@@ -29,12 +29,12 @@
   width: 1040px;
   margin: auto;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 
 .header_block_navigation {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .tree_navigation {
@@ -44,7 +44,7 @@
 .branch_navigation {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.3);
-  margin-right: 30px;
+  margin-right: 39px;
   position: relative;
   transition: color 0.3s;
 }
@@ -66,7 +66,7 @@
   height: 7px;
   background: url("../img/nav-arrow.png") 0 0 no-repeat;
   top: 7px;
-  left: -15px;
+  left: -22px;
 }
 
 
@@ -106,7 +106,7 @@
 .devices_display {
   min-height: 500px;
   padding-top: 69px;
-  padding-bottom: 73px;
+  padding-bottom: 67px;
   background-color: white;
 }
 
@@ -171,7 +171,7 @@
 .filter_bluetooth {
   width: 200px;
   border-top: 2px solid #000;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .filter_cost {
@@ -181,6 +181,10 @@
 
 .irs-handle {
   display: none;
+}
+.irs--flat {
+  height: 40px;
+  margin-top: 6px;
 }
 
 .irs--flat .irs-line {
@@ -237,8 +241,11 @@
 
 .color_name,
 .bluetooth_exist {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-left: 35px;
+}
+.color_name:last-child {
+  margin-bottom: 36px;
 }
 
 .color_name input[type="checkbox"] {
@@ -283,7 +290,7 @@
 }
 
 .filter_bluetooth {
-  margin-bottom: 60px;
+  margin-bottom: 37px;
 }
 
 .bluetooth_choose input[type="radio"] {
@@ -346,7 +353,7 @@
 .device_subscription {
   display: flex;
   justify-content: space-between;
-  margin-top: 37px;
+  margin-top: 25px;
   margin-bottom: 45px;
 }
 
@@ -360,6 +367,7 @@
 .device_name {
   display: block;
   width: 254px;
+  line-height: 20px;
 }
 
 .device_addition_box {

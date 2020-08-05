@@ -2,14 +2,10 @@
   box-sizing: border-box;
 }
 
-.main_header {
-  padding-bottom: 160px;
-}
-
 .preview_block {
   width: 1160px;
   display: flex;
-  margin-bottom: 105px;
+  margin-bottom: 118px;
   position: relative;
 }
 
@@ -20,8 +16,8 @@
   width: 100px;
   height: 7px;
   background-color: white;
-  top: -67px;
-  right: 480px;
+  top: -73px;
+  right: 459px;
 }
 
 .preview_block::after {
@@ -31,13 +27,16 @@
   font-size: 179.2px;
   font-weight: bold;
   color: white;
-  top: -50px;
-  right: 81px;
+  top: -48px;
+  right: 48px;
 }
 
 .preview_img,
 .description {
   width: 580px;
+}
+.description {
+  padding-left: 20px;
 }
 
 .preview_img {
@@ -59,11 +58,10 @@
 
 .description_control {
   display: flex;
-
-  margin-top: 60px;
   align-items: center;
   width: 500px;
-  margin-bottom: 75px;
+  margin-top: 48px;
+  margin-bottom: 58px;
 }
 
 .description_text {
@@ -82,7 +80,7 @@
 }
 
 .preview_radio_block {
-  padding-left: 21px;
+  padding-left: 15px;
 }
 
 .preview_radio_block input[type='radio'] {
@@ -139,7 +137,7 @@
   display: flex;
   list-style: none;
   justify-content: space-between;
-  margin-bottom: 146px;
+  margin-bottom: 169px;
 }
 
 .devices_boxes {
@@ -188,16 +186,17 @@
 }
 
 .services {
-  width: 1160px;
-  margin: 0 auto;
   display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .services_buttons {
   border-right: 7px solid black;
-  margin-top: -86px;
-  padding-top: 66px;
-  padding-bottom: 36px;
+  margin-top: -102px;
+  padding-top: 80px;
+  padding-bottom: 47px;
   margin-right: 116px;
   margin-bottom: 69px;
 }
@@ -271,10 +270,9 @@
 }
 
 .companies {
-  margin-bottom: 90px;
+  margin-bottom: 95px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .companies_boxes {
@@ -324,7 +322,7 @@
 .contacts {
   width: 560px;
   padding-top: 59px;
-  padding-bottom: 90px;
+  padding-bottom: 82px;
   position: relative;
 }
 
@@ -342,16 +340,22 @@
 .about_us .heading,
 .contacts .heading {
   margin-top: 0;
+  margin-bottom: 52px;
 }
 
 .about_us_info {
   display: block;
   width: 490px;
 }
+.about_us_info,
+.contacts_info {
+  margin-bottom: 30px;
+}
 
 .trans_company {
-  padding-left: 40px;
-  font-size: 18px;
+  padding-left: 35px;
+  padding-top: 22px;
+  font-size: 16px;
   font-weight: bold;
   font-family: GilroyExtraBold;
   margin-top: 50px;
@@ -359,7 +363,7 @@
 }
 
 .trans_company li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -370,7 +374,7 @@
   width: 8px;
   height: 8px;
   top: 11px;
-  left: -40px;
+  left: -35px;
   background-image: url(../img/slider_button_trans_company.png);
 }
 
@@ -383,6 +387,6 @@
 }
 
 .info_link {
-  margin-top: 85px;
+  margin-top: 59px;
   width: 260px;
 }

@@ -108,6 +108,7 @@ ul {
   margin-top: 40px;
   background-color: rgb(247, 226, 150);
   padding-top: 1px;
+  padding-bottom: 148px;
 }
 
 .main_header_logo {
@@ -138,6 +139,10 @@ ul {
 .main_header_bottom_left,
 .main_header_bottom_right {
   width: 520px;
+}
+.main_header_top_right,
+.main_header_bottom_right {
+  padding-left: 20px;
 }
 
 .main_header_bottom_left {
@@ -334,7 +339,7 @@ input::-webkit-search-results-decoration {
 
 .link_delivery,
 .link_guaranee {
-  margin-right: 39px;
+  margin-right: 35px;
 }
 
 .main_footer {
@@ -390,11 +395,11 @@ input::-webkit-search-results-decoration {
 
 .main_footer_userblock li {
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .main_footer_center {
-  margin-bottom: 70px;
+  margin-bottom: 62px;
 }
 .main_footer_adress {
   font-style: normal;
@@ -417,6 +422,7 @@ input::-webkit-search-results-decoration {
   position: absolute;
   width: 80px;
   height: 7px;
+  top: 15px;
   background-color: rgb(255, 198, 0);
 }
 .main_footer_social {
