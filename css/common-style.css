@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Gilroy';
+  font-family: 'Gilroy', 'Arial', sans-serif;
   src: url('../fonts/Gilroy.ttf');
 }
 
@@ -9,11 +9,10 @@
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   src: url('../fonts/Open\ Sans.ttf');
 }
 
-/* https://up.htmlacademy.ru/htmlcss/17/criteries#basic-10 */
 body {
   font-size: 15px;
   line-height: 30px;
@@ -116,7 +115,7 @@ ul {
   margin-left: 60px;
   margin-top: -15px;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 12px;
   width: 165px;
 }
 
@@ -130,7 +129,7 @@ ul {
 }
 
 .main_header_top {
-  margin-bottom: 44px;
+  margin-bottom: 22px;
   min-height: 60px;
 }
 
@@ -164,7 +163,7 @@ ul {
 }
 
 .search_label {
-  margin-right: 19px;
+  margin-right: 25px;
 }
 
 .input_search {
@@ -219,13 +218,13 @@ input::-webkit-search-results-decoration {
   content: '';
 }
 
-.input_search:focus+.button_search {
+.input_search:focus + .button_search {
   opacity: 1;
   z-index: 1;
   transition-delay: 0s;
 }
 
-.input_search:focus+.button_search::after {
+.input_search:focus + .button_search::after {
   width: 420px;
 }
 
@@ -291,12 +290,11 @@ input::-webkit-search-results-decoration {
     'act_cam . .';
 }
 
-.link_catalog:hover+.drop_down_menu_block,
+.link_catalog:hover + .drop_down_menu_block,
 .drop_down_menu_block:hover {
   max-height: 120px;
   opacity: 1;
   transition: all 1s;
-
 }
 
 .menu_nav_link {
@@ -415,7 +413,7 @@ input::-webkit-search-results-decoration {
   position: relative;
 }
 .main_footer_bottom:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 80px;
   height: 7px;
@@ -425,7 +423,6 @@ input::-webkit-search-results-decoration {
   display: flex;
   margin-left: 510px;
 }
-
 
 .social_link {
   margin-left: 22px;
