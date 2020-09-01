@@ -17,10 +17,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="device-catalog.js"></script>
+  <script>
+    $(window).load(function() {
+      $("body").removeClass("preload");
+    });
+  </script>
   <title>Document</title>
 </head>
 
-<body>
+<body class="preload">
   <div class="container">
     <header class="main_header main_header_catalog">
       <a class="main_header_logo logo" href="#">
