@@ -46,6 +46,7 @@ ul {
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
+  transition: none !important;
 }
 
 .container {
@@ -73,11 +74,11 @@ ul {
   transition: opacity 0.3s;
 }
 
-.logo:hover {
+.logo:not(.disabled):hover {
   opacity: 60%;
 }
 
-.logo:active {
+.logo:not(.disabled):active {
   opacity: 30%;
 }
 
@@ -112,6 +113,11 @@ ul {
   -webkit-transition-duration: 0.3s;
        -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
+}
+
+.work_link::after {
+  content: '';
+  position: absolute;
 }
 
 .work_link:hover {

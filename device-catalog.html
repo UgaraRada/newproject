@@ -16,7 +16,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
-  <script src="device-catalog.js"></script>
+  <script src="./js/device-catalog.js"></script>
   <script>
     $(window).load(function() {
       $("body").removeClass("preload");
@@ -33,21 +33,21 @@
       </a>
       <nav class="main_header_top">
         <div class="main_header_top_left search_site">
-          <img src="img/search.png" class="search_label" width="16" height="16">
+          <img src="./img/search.png" class="search_label" width="16" height="16">
           <input type="search" class="input_search" placeholder="Поиск по сайту" />
           <button type="submit" class="button_search">Найти</button>
         </div>
 
         <ul class="main_header_top_right main_header_top_userblock">
           <li class="link_user link_login">
-            <img src="img/user_header.png" class="user_label" width="13" height="12">
+            <img src="./img/user_header.png" class="user_label" width="13" height="12">
             <span class="name_user">Валентин Петухов</span>
             <a href="#" class="link_user link_login">
               <span class="link_out"> Выйти</span></a>
           </li>
           <li class="link_user link_compare">
             <a href="#">
-              <img src="img/compare_header.png" class="user_label" width="10" height="10">
+              <img src="./img/compare_header.png" class="user_label" width="10" height="10">
               Сравнить</a>
           </li>
           <li class="link_user link_basket">
@@ -132,10 +132,12 @@
                 <button type="submit" class="sorting_button sort_popular">По популярности</button>
               </li>
             </ul>
-            <button type="submit" class="sorting_arrows aroow_up"><img src="img/arrow_up.png" height="10"
-                width="11"></button>
-            <button type="submit" class="sorting_arrows aroow_down"><img src="img/arrow_down.png" height="10"
-                width="11"></button>
+            <button type="submit" class="sorting_arrows aroow_up">
+              <img src="img/arrow_up.png" height="10" width="11">
+            </button>
+            <button type="submit" class="sorting_arrows aroow_down">
+              <img src="img/arrow_down.png" height="10" width="11">
+            </button>
           </div>
         </div>
       </div>
