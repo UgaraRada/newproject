@@ -1,9 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .preview_block {
   width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 118px;
   position: relative;
@@ -57,8 +67,12 @@
 }
 
 .description_control {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 500px;
   margin-top: 48px;
   margin-bottom: 58px;
@@ -76,6 +90,8 @@
 }
 
 .descriptoin_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -101,6 +117,8 @@
   left: -15px;
   bottom: 4px;
   background: url('../img/slider-button-empty.png') 0 0 no-repeat;
+  -webkit-transition: background 0.4s;
+  -o-transition: background 0.4s;
   transition: background 0.4s;
 }
 
@@ -109,6 +127,8 @@
 }
 
 .characteristics {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 0;
@@ -134,9 +154,13 @@
 }
 
 .devices {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 169px;
 }
 
@@ -145,6 +169,8 @@
 }
 
 .devices_link {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
   transition: color 0.5s;
 }
 
@@ -152,18 +178,30 @@
   width: 160px;
   height: 160px;
   background-color: rgb(247, 226, 150);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 35px;
+  -webkit-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
 }
 
 .devices li:nth-child(2) .device_picture {
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .device_picture img {
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -186,6 +224,8 @@
 }
 
 .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -208,30 +248,42 @@
 .service_button_label {
   position: relative;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 40px;
   width: 160px;
   margin-right: 117px;
   margin-bottom: 24px;
   z-index: 1;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url('../img/background_work_link.png') 0 0 no-repeat;
   background-size: 100% 8px;
   background-position-y: center;
+  -webkit-transition-property: color, background-size;
+  -o-transition-property: color, background-size;
   transition-property: color, background-size;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .service_button_label::after {
   content: '';
   position: absolute;
-  display: block;
+  display: inline-block;
   height: 40px;
   background-color: black;
   width: 0;
   z-index: -1;
   left: 0;
+  -webkit-transition: width 0.5s;
+  -o-transition: width 0.5s;
   transition: width 0.5s;
 }
 
@@ -271,13 +323,19 @@
 
 .companies {
   margin-bottom: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .companies_boxes {
   width: 260px;
   height: 100px;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
   transition: background 0.3s;
 }
 
@@ -314,8 +372,12 @@
 }
 
 .store_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about_us,

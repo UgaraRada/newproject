@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .filter_caption,
@@ -38,6 +46,8 @@
 }
 
 .tree_navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -46,6 +56,8 @@
   color: rgba(0, 0, 0, 0.3);
   margin-right: 39px;
   position: relative;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -71,7 +83,9 @@
 
 
 .choose_devices {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: auto 325px 835px auto;
   grid-template-columns: auto 325px 835px auto;
   background-color: rgba(235, 235, 235, 0.5);
 }
@@ -90,11 +104,15 @@
 
 .filter,
 .filter_parameters {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-column: 1/3;
 }
 
 .sorting_parameters,
 .devices_display {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-column: 3/5;
 }
 
@@ -113,8 +131,12 @@
 .filter_head,
 .sorting_parameters_block,
 .choose_sorting_parameters {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 70px;
 }
 
@@ -131,6 +153,8 @@
   margin-right: 29px;
   background-color: rgba(235, 235, 235, 0);
   cursor: pointer;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -155,6 +179,8 @@
   padding: 0;
   background-color: rgba(235, 235, 235, 0);
   margin-left: 19px;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -266,6 +292,8 @@
   background: url("../img/color_checkbox-off.png") 0 0 no-repeat;
   top: -2px;
   left: -35px;
+  -webkit-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
   transition: 0.3s opacity;
 }
 
@@ -279,14 +307,18 @@
   left: -30px;
   border-left: 4px solid black;
   border-bottom: 4px solid black;
-  opacity: 0%;
-  transform: rotate(-45deg);
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
   transition: 0.3s opacity;
 
 }
 
 .color_name input[type="checkbox"]:checked~.color_label::after {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .filter_bluetooth {
@@ -311,8 +343,12 @@
   background: url("../img/bluetooth_radio-off.png") 0 0 no-repeat;
   top: -2px;
   left: -35px;
+  -webkit-transition-property: opacity, background;
+  -o-transition-property: opacity, background;
   transition-property: opacity, background;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .bluetooth_choose input[type="radio"]:checked~.bluetooth_label::before {
@@ -322,13 +358,13 @@
 .color_name:hover .color_label::before,
 .color_name:hover input[type="checkbox"]:checked~.color_label::after,
 .bluetooth_exist:hover .bluetooth_label::before {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .color_name:active .color_label::before,
 .color_name:active input[type="checkbox"]:checked~.color_label::after,
 .bluetooth_exist:active .bluetooth_label::before {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .filter_button,
@@ -340,9 +376,14 @@
 }
 
 .devices_pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .display_box {
@@ -351,8 +392,12 @@
 }
 
 .device_subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 25px;
   margin-bottom: 45px;
 }
@@ -372,15 +417,24 @@
 
 .device_addition_box {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 200px;
   top: 170px;
   left: 80px;
   z-index: -1;
   opacity: 0;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .device_addition_box:hover {
@@ -391,7 +445,9 @@
 .device_selection:hover+.device_addition_box {
   z-index: 2;
   opacity: 100%;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .basket_button {
@@ -406,10 +462,14 @@
   font-family: Open Sans;
   font-style: 13px;
   color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
 .device_selection img {
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -428,8 +488,12 @@
 
 
 .page_selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 760px;
   background-color: rgba(235, 235, 235, 0.5);
 }
@@ -447,12 +511,16 @@
 .button_back {
   margin-right: auto;
   padding: 30px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .button_next {
   margin-left: auto;
   padding: 30px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -468,11 +536,15 @@
 }
 
 .pick_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .button_number {
   margin-right: 32px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
