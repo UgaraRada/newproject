@@ -85,8 +85,8 @@
 .choose_devices {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 325px 835px auto;
-  grid-template-columns: auto 325px 835px auto;
+  -ms-grid-columns: calc((100% - 1160px) / 2) 325px 835px calc((100% - 1160px) / 2);
+  grid-template-columns: calc((100% - 1160px) / 2) 325px 835px calc((100% - 1160px) / 2);
   background-color: rgba(235, 235, 235, 0.5);
 }
 
@@ -116,8 +116,22 @@
   grid-column: 3/5;
 }
 
+.filter,
+.sorting_parameters {
+  grid-row: 1/2;
+  -ms-grid-row: 1/2;
+  -ms-grid-row-span: 1/2;
+}
+
+.filter_parameters,
+.devices_display {
+  grid-row: 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+}
+
 .filter {
-  min-height: 70px;
+  height: 70px;
   background-color: rgba(219, 219, 219, 1);
 }
 
@@ -134,10 +148,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 70px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 70px;
 }
 
 .choose_sorting_parameters {
