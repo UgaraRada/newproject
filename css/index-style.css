@@ -410,9 +410,16 @@
   display: block;
   width: 490px;
 }
-.about_us_info,
-.contacts_info {
+.about_us_info {
   margin-bottom: 30px;
+}
+.contacts_info {
+  margin-bottom: 40px;
+}
+
+#map {
+  width: 560px;
+  height: 232px;
 }
 
 .trans_company {
@@ -445,9 +452,7 @@
   margin-bottom: 0px;
 }
 
-.contacts img {
-  margin-top: 10px;
-}
+
 
 .info_link {
   margin-top: 59px;
