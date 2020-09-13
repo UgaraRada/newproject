@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="css/index-style.css" rel="stylesheet" />
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/common-style.css" rel="stylesheet" />
+  <link href="css/index-style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
     rel="stylesheet">
   <title>Device</title>
@@ -18,11 +19,6 @@
   </script>
 </head>
 
-
-<!-- https://up.htmlacademy.ru/htmlcss/17/criteries - сверься самостоятельно -->
-<!-- http://validator.w3.org/ - закинь свой html сюда и поправь ошибки-->
-<!-- а так норм ) -->
-
 <body class="preload">
   <div class="container">
     <header class="main_header">
@@ -31,33 +27,33 @@
       </a>
       <nav class="main_header_top">
         <div class="main_header_top_left search_site">
-          <img src="img/search.png" class="search_label" width="16" height="16">
+          <img src="./img/search.png" class="search_label" width="16" height="16">
           <input type="search" class="input_search" placeholder="Поиск по сайту" />
           <button type="submit" class="button_search">Найти</button>
         </div>
         <ul class="main_header_top_right main_header_top_userblock">
           <li class="link_user link_login">
             <a href="#" class="link_user link_login">
-              <img src="img/user_header.png" class="user_label" width="13" height="12">
+              <img src="./img/user_header.png" class="user_label" width="13" height="12">
               Войти</a>
           </li>
           <li class="link_user link_compare">
             <a href="#">
-              <img src="img/compare_header.png" class="user_label" width="10" height="10">
+              <img src="./img/compare_header.png" class="user_label" width="10" height="10">
               Сравнить</a>
           </li>
           <li class="link_user link_basket">
             <a href="#">
-              <img src="img/basket_header.png" class="user_label" width="12" height="12">
+              <img src="./img/basket_header.png" class="user_label" width="12" height="12">
               Корзина</a>
           </li>
         </ul>
       </nav>
       <nav class="main_header_bottom">
         <div class="main_header_bottom_left">
-          <a class="link_navigation link_catalog" href="#">
+          <a class="link_navigation link_catalog" href="http://127.0.0.1:5500/test/device-catalog.html">
             Каталог товаров
-            <img src="img/plus.png" class="catalog_plus" width="16" height="16">
+            <img src="./img/plus.png" class="catalog_plus" width="16" height="16">
           </a>
           <ul class=" drop_down_menu_block">
             <li class="men_vir_real">
@@ -92,7 +88,7 @@
     <div class="container">
       <div class="preview_block">
         <div class="preview_img">
-          <img src="img/stick.png" width="384" height="486" />
+          <img src="./img/stick.png" width="384" height="486" />
         </div>
         <div class="description">
           <span class="description_slogan heading">
@@ -141,7 +137,7 @@
         <li class="devices_boxes">
           <a href="#" class="devices_link">
             <div class="device_picture">
-              <img src="img/virtual_reality.png" width="97" height="55" />
+              <img src="./img/virtual_reality.png" width="97" height="55" />
             </div>
             Виртуальная
             реальность
@@ -150,7 +146,7 @@
         <li class="devices_boxes">
           <a href="#" class="devices_link">
             <div class="device_picture">
-              <img src="img/monopods_for_selfie.png" width="86" height="117" />
+              <img src="./img/monopods_for_selfie.png" width="86" height="117" />
             </div>
             Моноподы
             для селфи
@@ -159,7 +155,7 @@
         <li class="devices_boxes">
           <a href="#" class="devices_link">
             <div class="device_picture">
-              <img src="img/action_camera.png" width="71" height="87" />
+              <img src="./img/action_camera.png" width="71" height="87" />
             </div>
             Экшн-камеры
           </a>
@@ -167,7 +163,7 @@
         <li class="devices_boxes">
           <a href="#" class="devices_link">
             <div class="device_picture">
-              <img src="img/fitness_bracelets.png" width="107" height="65" />
+              <img src="./img/fitness_bracelets.png" width="107" height="65" />
             </div>
             Фитнес-браслеты
           </a>
@@ -175,7 +171,7 @@
         <li class="devices_boxes">
           <a href="#" class="devices_link">
             <div class="device_picture">
-              <img src="img/smart_watch.png" width="56" height="98" />
+              <img src="./img/smart_watch.png" width="56" height="98" />
             </div>
             Умные часы
           </a>
@@ -183,7 +179,7 @@
         <li class="devices_boxes">
           <a href="#" class="devices_link">
             <div class="device_picture">
-              <img src="img/quadrocopters.png" width="132" height="69" />
+              <img src="./img/quadrocopters.png" width="132" height="69" />
             </div>
             Квадракоптеры
           </a>
@@ -196,16 +192,16 @@
         <ul class="services_buttons">
           <li>
             <input class="service_choose_button" name="services" type="radio" value="" id="delivery" checked />
-            <label for="delivery" class="service_button_label">Доставка</label>
+            <label for="delivery" class="service_button_label work_link">Доставка</label>
           </li>
           <li>
             <input class="service_choose_button" name="services" type="radio" value="" id="guarantee" />
-            <label for="guarantee" class="service_button_label">Гарантия</label>
+            <label for="guarantee" class="service_button_label work_link">Гарантия</label>
           </li>
 
           <li>
             <input class="service_choose_button" name="services" type="radio" value="" id="credit" />
-            <label for="credit" class="service_button_label">Кредит</label>
+            <label for="credit" class="service_button_label work_link">Кредит</label>
           </li>
         </ul>
         <div class="services_delivery">
@@ -215,7 +211,7 @@
             подъезду совершенно бессплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.
           </p>
-          <img src="img/delivery.png" width="136" height="164" />
+          <img src="./img/delivery.png" width="136" height="164" />
         </div>
       </div>
     </div>
@@ -252,7 +248,7 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <img src="img/map.png" width="560" height="222" />
+          <img src="./img/map.png" width="560" height="222" />
           <a class="info_link work_link" href="#">напишите нам</a>
         </div>
       </div>
@@ -265,16 +261,16 @@
         <ul class="main_footer_userblock">
           <li>
             <a class="link_user_bottom login" href="#">
-              <img src="img/user_bottom.png" class="user_label_bottom" width="13" height="12">Войти</a>
+              <img src="./img/user_bottom.png" class="user_label_bottom" width="13" height="12">Войти</a>
           </li>
           <li>
             <a class="link_user_bottom compare" href="#">
-              <img src="img/compare_bottom.png" class="user_label_bottom" width="10" height="10">
+              <img src="./img/compare_bottom.png" class="user_label_bottom" width="10" height="10">
               Сравнить</a>
           </li>
           <li>
             <a class="link_user_bottom basket" href="#">
-              <img src="img/basket_bottom.png" class="user_label_bottom" width="12" height="12">
+              <img src="./img/basket_bottom.png" class="user_label_bottom" width="12" height="12">
               Корзина</a>
           </li>
         </ul>
@@ -298,22 +294,22 @@
         <ul class="main_footer_social">
           <li>
             <a href="#" class="fb social_link">
-              <img src="img/badge_for_facebook.png" width="32" height="32">
+              <img src="./img/badge_for_facebook.png" width="32" height="32">
             </a>
           </li>
           <li>
             <a href="#" class="inst social_link">
-              <img src="img/badge_for_instagram.png" width="32" height="32">
+              <img src="./img/badge_for_instagram.png" width="32" height="32">
             </a>
           </li>
           <li>
             <a href="#" class="tw social_link">
-              <img src="img/badge_for_twitter.png" width="32" height="32">
+              <img src="./img/badge_for_twitter.png" width="32" height="32">
             </a>
           </li>
         </ul>
         <a class="link_htmlacadem" href="https://htmlacademy.ru/">
-          <img src="img/logo_html.png" width="27" height="35">
+          <img src="./img/logo_html.png" width="27" height="35">
         </a>
       </div>
     </div>

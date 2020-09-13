@@ -90,6 +90,7 @@ ul {
 
 .work_link {
   font-size: 18px;
+  position: relative;
   font-weight: bold;
   font-family: GilroyExtraBold;
   letter-spacing: 0.2em;
@@ -98,13 +99,16 @@ ul {
   display: -ms-flexbox;
   display: flex;
   height: 40px;
+  background: inherit;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url('../img/background_work_link.png') 0 0 no-repeat;
+
+  
+  /* background: url('../img/background_work_link.png') 0 0 no-repeat;
   background-size: 100% 8px;
   background-position-y: center;
   -webkit-transition-property: color, background-size;
@@ -112,21 +116,29 @@ ul {
   transition-property: color, background-size;
   -webkit-transition-duration: 0.3s;
        -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+          transition-duration: 0.3s; */
 }
 
-.work_link::after {
-  content: '';
+.work_link::before {
+  content: '' ;
   position: absolute;
+  display: inline-block;
+  background-color: rgb(240, 197, 46);
+  height: 8px;
+  width: 100%;
+  background-position: 100% 50%;
+  z-index: -1;
+  transition: all 0.3s;
 }
 
-.work_link:hover {
-  background-size: 100% 100%;
+
+.work_link:hover::before {
+  height: 40px;
 }
 
 .work_link:active {
-  background-size: 100% 100%;
   color: rgba(0, 0, 0, 0.3);
+  transition: color 0.3s;
 }
 
 .devices_link,

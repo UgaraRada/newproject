@@ -262,12 +262,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url('../img/background_work_link.png') 0 0 no-repeat;
-  background-size: 100% 8px;
-  background-position-y: center;
-  -webkit-transition-property: color, background-size;
-  -o-transition-property: color, background-size;
-  transition-property: color, background-size;
+
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
   -webkit-transition-duration: 0.3s;
        -o-transition-duration: 0.3s;
           transition-duration: 0.3s;
@@ -295,9 +293,12 @@
   color: rgb(247, 225, 132);
 }
 
+
 .service_choose_button:checked~.service_button_label::after {
   width: 278px;
 }
+
+
 
 .services_delivery {
   width: 850px;

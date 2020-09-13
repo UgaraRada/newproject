@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <script src="jquery-3.5.1.min.js"></script>
+  <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
 
@@ -18,7 +19,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="./js/device-catalog.js"></script>
   <script>
-    $(window).load(function() {
+    $(window).load(function () {
       $("body").removeClass("preload");
     });
   </script>
@@ -28,7 +29,7 @@
 <body class="preload">
   <div class="container">
     <header class="main_header main_header_catalog">
-      <a class="main_header_logo logo" href="#">
+      <a class="main_header_logo logo" href="http://127.0.0.1:5500/test/index.html">
         device
       </a>
       <nav class="main_header_top">
@@ -37,7 +38,7 @@
           <input type="search" class="input_search" placeholder="Поиск по сайту" />
           <button type="submit" class="button_search">Найти</button>
         </div>
-
+        
         <ul class="main_header_top_right main_header_top_userblock">
           <li class="link_user link_login">
             <img src="./img/user_header.png" class="user_label" width="13" height="12">
@@ -52,7 +53,7 @@
           </li>
           <li class="link_user link_basket">
             <a href="#">
-              <img src="img/basket_header.png" class="user_label" width="12" height="12">
+              <img src="./img/basket_header.png" class="user_label" width="12" height="12">
               Корзина</a>
           </li>
         </ul>
@@ -61,7 +62,7 @@
         <div class="main_header_bottom_left">
           <a class="link_navigation link_catalog" href="#">
             Каталог товаров
-            <img src="img/plus.png" class="catalog_plus" width="16" height="16">
+            <img src="./img/plus.png" class="catalog_plus" width="16" height="16">
           </a>
           <ul class=" drop_down_menu_block">
             <li class="men_vir_real">
@@ -133,10 +134,10 @@
               </li>
             </ul>
             <button type="submit" class="sorting_arrows aroow_up">
-              <img src="img/arrow_up.png" height="10" width="11">
+              <img src="./img/arrow_up.png" height="10" width="11">
             </button>
             <button type="submit" class="sorting_arrows aroow_down">
-              <img src="img/arrow_down.png" height="10" width="11">
+              <img src="./img/arrow_down.png" height="10" width="11">
             </button>
           </div>
         </div>
@@ -195,7 +196,7 @@
           <div class="devices_pages">
             <div class="display_box">
               <a href="#" class="device_selection devices_link">
-                <img class="test_d" src="img/ameteur_selfie_stick.png" width="360" height="380" />
+                <img class="test_d" src="./img/ameteur_selfie_stick.png" width="360" height="380" />
                 <div class="device_subscription">
                   <span class="device_name">Любительская селфи-палка</span>
                   <span class="devices_price">500 руб.</span>
@@ -212,7 +213,7 @@
             </div>
             <div class="display_box">
               <a href="#" class="device_selection devices_link">
-                <img src="img/professional_selfie_stick.png" width="360" height="380" />
+                <img src="./img/professional_selfie_stick.png" width="360" height="380" />
                 <div class="device_subscription">
                   <span class="device_name">Профессиональная селфи-палка</span>
                   <span class="devices_price">1500 руб.</span>
@@ -229,7 +230,7 @@
             </div>
             <div class="display_box">
               <a href="#" class="device_selection devices_link">
-                <img src="img/unsinkable_selfie_stick.png" width="360" height="380" />
+                <img src="./img/unsinkable_selfie_stick.png" width="360" height="380" />
                 <div class="device_subscription">
                   <span class="device_name">Непотопляемая селфи-палка</span>
                   <span class="devices_price">2500 руб.</span>
@@ -246,7 +247,7 @@
             </div>
             <div class="display_box ">
               <a href="#" class="device_selection devices_link">
-                <img src="img/selfie_stick_follow_me.png" width="360" height="380" />
+                <img src="./img/selfie_stick_follow_me.png" width="360" height="380" />
                 <div class="device_subscription">
                   <span class="device_name">Селфи-палка &laquo;Следуй за мной&raquo;</span>
                   <span class="devices_price">4900 руб.</span>
@@ -289,17 +290,17 @@
         <ul class="main_footer_userblock">
           <li>
             <a class="link_user_bottom login" href="#">
-              <img src="img/user_bottom.png" class="user_label_bottom" width="13" height="12">
+              <img src="./img/user_bottom.png" class="user_label_bottom" width="13" height="12">
               Выйти</a>
           </li>
           <li>
             <a class="link_user_bottom compare" href="#">
-              <img src="img/compare_bottom.png" class="user_label_bottom" width="10" height="10">
+              <img src="./img/compare_bottom.png" class="user_label_bottom" width="10" height="10">
               Сравнить</a>
           </li>
           <li>
             <a class="link_user_bottom basket" href="#">
-              <img src="img/basket_bottom.png" class="user_label_bottom" width="12" height="12">
+              <img src="./img/basket_bottom.png" class="user_label_bottom" width="12" height="12">
               Корзина</a>
           </li>
         </ul>
@@ -323,25 +324,26 @@
         <ul class="main_footer_social">
           <li>
             <a href="#" class="fb social_link">
-              <img src="img/badge_for_facebook.png" width="32" height="32">
+              <img src="./img/badge_for_facebook.png" width="32" height="32">
             </a>
           </li>
           <li>
             <a href="#" class="inst social_link">
-              <img src="img/badge_for_instagram.png" width="32" height="32">
+              <img src="./img/badge_for_instagram.png" width="32" height="32">
             </a>
           </li>
           <li>
             <a href="#" class="tw social_link">
-              <img src="img/badge_for_twitter.png" width="32" height="32">
+              <img src="./img/badge_for_twitter.png" width="32" height="32">
             </a>
           </li>
         </ul>
         <a class="link_htmlacadem" href="https://htmlacademy.ru/">
-          <img src="img/logo_html.png" width="27" height="35">
+          <img src="./img/logo_html.png" width="27" height="35">
         </a>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

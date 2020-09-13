@@ -131,7 +131,6 @@
 }
 
 .filter {
-  height: 70px;
   background-color: rgba(219, 219, 219, 1);
 }
 
@@ -151,7 +150,6 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  height: 70px;
 }
 
 .choose_sorting_parameters {
@@ -387,6 +385,7 @@
   outline: none;
   width: 200px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .devices_pages {
