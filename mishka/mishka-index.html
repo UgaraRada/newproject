@@ -7,8 +7,10 @@
   <title>Document</title>
 </head>
 
-<body>
+<body class="catalog">
   <header class="page-header">
+    <!-- Просто wrapper - и так ведь понятно, что это блок, он же div. Зачем перегружать наименования? -->
+    <!-- и, кстати, не wrapper, а container. Снаружи внешний центровщик это всегда контейнер, а уже внутри мелкие обертки - врапперы -->
     <div class="wrapper-block">
       <a class="page-header__logo disabled" href="#">
         <img src="http://placehold.it" alt="mishka">
@@ -20,10 +22,14 @@
           <span></span>
           <span></span>
           <ul class="main-nav__list">
+            <!-- ссылка не может оборачивать li в списке - это незаконно, тут все наоборот )) -->
             <a href="#" class="main-nav__link">
-              <li class="main-nav__item main-nav__item-catalog">
+              <!-- https://up.htmlacademy.ru/adaptive/11/criteries#basic-5 модификаторы через два дефиса -->
+              <!-- И это не модификатор. В таких случаях надо контейнеру (тут body) добавить класс catalog, и стили уже от этого навешивать - .catalog .main-nav__item -->
+              <li class="main-nav__item">
                 Каталог товаров
                 <ul class="catalog-items">
+                  <!-- catalog-item или все-таки catalog-items? -->
                   <a class="catalog-item__link" href="#">
                     <li> Новые поступления </li>
                   </a>
@@ -33,6 +39,7 @@
                 </ul>
               </li>
             </a>
+            <!-- это тоже впервую очередь элемент списка, а уже потом ссылка -->
             <a href="#" class="main-nav__link">
               <li class="main-nav__item">Вязание на заказ</li>
             </a>
@@ -56,10 +63,13 @@
 
   <main class="main">
     <section class="topic">
+      <!-- тоже не блок -->
       <div class="wrapper-block">
         <h2 class="topic__title">
           Милые штуки ручной работы для дома
         </h2>
+        <!-- раз уже nav, то и тег можно nav поставить, а из класса убрать -->
+        <!-- topic__links, topic__link - норм  -->
         <div class="topic__links-nav ">
           <a class="topic__link-nav-item topic__link-nav-item--left" href="#">
             Предметы итерьера
@@ -72,11 +82,14 @@
     </section>
     <div class="wrapper-block">
       <section class="product-week">
+        <!-- ну, тут уже wrapper тогда -->
         <div class="inner-block">
           <h2 class="product-week__title">
             Вязаные корзинки
           </h2>
           <p class="product-week__banner">Товар недели</p>
+          <!-- я бы целиком писал, твои сокращения не все поймут так как ты
+          хотя descr распростроненное, хз, угадал ты или нет ) -->
           <p class="product-week__descr">
             Экологически чистая пряжа, ручная работа. Доступны в
             шести расцветках и трез размерах.
@@ -133,6 +146,7 @@
                 В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
                 фотографии сразу стали боллее стильными, а также набирают больше лайков!
               </p>
+              <!-- author -->
               <cite class="reviews__auhor-name">
                 Анастасия Красильникова
               </cite>
@@ -148,11 +162,14 @@
         <div class="inner-block">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__item-email">
-            e-mail: <a class="contacts__item-email--link" href="mailto:info@mimimishkashop.ru">
+            <!-- перенос -->
+            e-mail: 
+            <a class="contacts__item-email--link" href="mailto:info@mimimishkashop.ru">
               info@mimimishkashop.ru
             </a>
           </div>
           <div class="contacts__item-address">
+            <!-- тоже -->
             адрес: <address>г. Санкт-Петербург, ул. Большая Конюшенная,
               д. 19/8, офис 101</address>
           </div>

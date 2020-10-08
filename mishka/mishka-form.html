@@ -55,6 +55,7 @@
   </header>
 
   <main class="main-form">
+    <!-- почему тут  form-topic -->
     <section class="form-topic">
       <div class="wrapper-block">
         <h1 class="form-topic__title">
@@ -63,14 +64,17 @@
       </div>
     </section>
     <div class=form-block-wrapper">
+      <!-- а тут main-form__instruction -->
       <p class="main-form__instruction">
         Мы будем рады воплотить в жизнь ваши пожелиния! Запольните
         простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
     </div>
     <form action="#" method="post">
-      <section class="form-block">
-        <fieldset class="form-block__input-data form-block-wrapper">
+      <!-- тебе тут точно from-block нужен? эти стили нельзя на fieldset навесить? 
+      и тег section не про это, здесь лишний -->
+      <!-- <section class="main-form__block"> -->
+        <fieldset class="main-form__block main-form__input-data form-block-wrapper">
           <legend>Тип</legend>
           <input class="data-input__type" type="radio" name="type" 
           id="accessories" value="accessories" checked>
@@ -84,7 +88,8 @@
             Детская игрушка
           </label>
         </fieldset>
-      </section>
+      <!-- </section> -->
+      <!-- тут можно цвет через nth-child 2n сделать, и обрати внимание, что на мобиле он вовсе не grey -->
       <section class="form-block form-block--grey">
         <fieldset class="form-block__input-data form-block-wrapper">
           <legend>Цвет</legend>
@@ -142,7 +147,8 @@
            name="patronymic" placeholder="Отчество, если желаете">
         </fieldset>
       </section>
-      <section class="form-block form-block--grey">
+      <div class="form-block form-block--grey">
+        <!-- это уже не филдсеты, а лейблы с классами филдсетов -->
         <fieldset class="form-block__input-data form-block-wrapper">
           <legend>Тел</legend>
           <input class="data-input__phone" type="tel" name="tel"
@@ -156,7 +162,7 @@
            placeholder="Ваш Email*" required>
           <label class="data-input__e-mail-label" for="email"></label>
         </fieldset>
-      </section>
+      </div>
       <section class="form-block">
         <fieldset class="form-block__input-data form-block-wrapper">
           <legend>Доп</legend>
@@ -164,6 +170,7 @@
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
       </section>
+      <!-- ковычку забыл? -->
       <div class=form-block-wrapper">
         <p class="main-form__prompt">*Поля обязательные для заполнения</p>
         <button class="form-block-btn btn" type="submit">Отправить заказ</button>
