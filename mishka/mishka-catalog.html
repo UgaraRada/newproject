@@ -9,8 +9,8 @@
 
 <body>
   <header class="page-header">
-    <div class="wrapper-block">
-      <a class="page-header__logo" href="#">
+    <div class="container">
+      <a class="page-header__logo disabled" href="#">
         <img src="http://placehold.it" alt="mishka">
       </a>
       <nav class="main-nav ">
@@ -20,33 +20,38 @@
           <span></span>
           <span></span>
           <ul class="main-nav__list">
-            <a href="#" class="main-nav__link">
-              <li class="main-nav__item main-nav__item-catalog">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
                 Каталог товаров
-                <ul class="catalog-items">
-                  <a class="catalog-item__link" href="#">
-                    <li> Новые поступления </li>
+              </a>
+              <ul class="catalog-items">
+                <li>
+                  <a class="catalog-items__link" href="#">
+                    Новые поступления
                   </a>
-                  <a class="catalog-item__link" href="#">
-                    <li> Распродажа </li>
+                </li>
+                <li>
+                  <a class="catalog-items__link" href="#">
+                    Распродажа
                   </a>
-                </ul>
-              </li>
-            </a>
-            <a href="#" class="main-nav__link">
-              <li class="main-nav__item">Вязание на заказ</li>
-            </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Вязание на заказ
+              </a>
+            </li>
             <li class="main-nav__item">
               <button type="button" class="btn-search">
-                <img src="http://placehold.it" alt="Поиск по сайту">
+                Поиск по сайту
               </button>
             </li>
-            <a href="#" class="main-nav__link">
-              <li class="main-nav__item">
-                <img src="http://placehold.it" alt="Корзина">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
                 Корзина: пока пуста
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -56,26 +61,23 @@
 
   <main class="main-catalog">
     <section class="catalog-topic">
-      <div class="wrapper-block">
+      <div class="container">
         <h1 class="catalog-topic__title">
           Каталог товаров
         </h1>
       </div>
     </section>
-    <div class="wrapper-block">
+    <div class="container">
       <section class="catalog-products">
         <div class="catalog-products__item">
-          <img src="http://placehold.it/260x195">
-          <!-- catalog-products__descr, catalog-products__title норм-->
+          <img src="http://placehold.it/260x195">          
           <div class="catalog-products__descr">
             <h2 class="catalog-products__title">Зайчик-попрыгайчик</h2>
             <p class="catalog-products__features">Рост 30 см, вес 200г</p>
           </div>
           <div class="catalog-products__item-buy">
             <p class="catalog-products__item-buy-price">1 200 руб.</p>
-            <button type="submit" class="catalog-products__item-buy-basket btn-basket">
-              <!-- это не img, а background-image -->
-              <img src="http://placehold.it">
+            <button type="submit" class="catalog-products__item-buy-basket btn-basket">              
             </button>
           </div>
         </div>
@@ -88,7 +90,6 @@
           <div class="catalog-products__item-buy">
             <p class="catalog-products__item-buy-price">690 руб.</p>
             <button type="submit" class="catalog-products__item-buy-basket btn-basket">
-              <img src="http://placehold.it">
             </button>
           </div>
         </div>
@@ -101,7 +102,6 @@
           <div class="catalog-products__item-buy">
             <p class="catalog-products__item-buy-price">1 500 руб.</p>
             <button type="submit" class="catalog-products__item-buy-basket btn-basket">
-              <img src="http://placehold.it">
             </button>
           </div>
         </div>
@@ -118,7 +118,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="wrapper-block">
+    <div class="container">
       <a class="page-footer__logo" href="#">
         <img src="http://placehold.it" alt="mishka">
       </a>

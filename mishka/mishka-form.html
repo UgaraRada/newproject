@@ -9,8 +9,8 @@
 
 <body>
   <header class="page-header">
-    <div class="wrapper-block">
-      <a class="page-header__logo" href="#">
+    <div class="container">
+      <a class="page-header__logo disabled" href="#">
         <img src="http://placehold.it" alt="mishka">
       </a>
       <nav class="main-nav ">
@@ -20,33 +20,38 @@
           <span></span>
           <span></span>
           <ul class="main-nav__list">
-            <a href="#" class="main-nav__link">
-              <li class="main-nav__item main-nav__item-catalog">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
                 Каталог товаров
-                <ul class="catalog-items">
-                  <a class="catalog-item__link" href="#">
-                    <li> Новые поступления </li>
+              </a>
+              <ul class="catalog-items">
+                <li>
+                  <a class="catalog-items__link" href="#">
+                    Новые поступления
                   </a>
-                  <a class="catalog-item__link" href="#">
-                    <li> Распродажа </li>
+                </li>
+                <li>
+                  <a class="catalog-items__link" href="#">
+                    Распродажа
                   </a>
-                </ul>
-              </li>
-            </a>
-            <a href="#" class="main-nav__link">
-              <li class="main-nav__item">Вязание на заказ</li>
-            </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                Вязание на заказ
+              </a>
+            </li>
             <li class="main-nav__item">
               <button type="button" class="btn-search">
-                <img src="http://placehold.it" alt="Поиск по сайту">
+                Поиск по сайту
               </button>
             </li>
-            <a href="#" class="main-nav__link">
-              <li class="main-nav__item">
-                <img src="http://placehold.it" alt="Корзина">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
                 Корзина: пока пуста
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -55,131 +60,106 @@
   </header>
 
   <main class="main-form">
-    <!-- почему тут  form-topic -->
-    <section class="form-topic">
-      <div class="wrapper-block">
+    <section class="main-form__topic">
+      <div class="container">
         <h1 class="form-topic__title">
           Вязание на заказ
         </h1>
       </div>
     </section>
-    <div class=form-block-wrapper">
-      <!-- а тут main-form__instruction -->
-      <p class="main-form__instruction">
-        Мы будем рады воплотить в жизнь ваши пожелиния! Запольните
-        простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
-      </p>
-    </div>
-    <form action="#" method="post">
-      <!-- тебе тут точно from-block нужен? эти стили нельзя на fieldset навесить? 
-      и тег section не про это, здесь лишний -->
-      <!-- <section class="main-form__block"> -->
-        <fieldset class="main-form__block main-form__input-data form-block-wrapper">
+    <div class="container">
+      <div class=wrapper">
+        <p class="main-form__instruction">
+          Мы будем рады воплотить в жизнь ваши пожелиния! Запольните
+          простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+      </div>
+      <form action="#" method="post">
+        <fieldset class="main-form__input-data wrapper">
           <legend>Тип</legend>
-          <input class="data-input__type" type="radio" name="type" 
-          id="accessories" value="accessories" checked>
+          <input class="data-input__type" type="radio" name="type" id="accessories" value="accessories" checked>
           <label class="data-input__type-label" for="accessories">
             Аксессуар для интерьера
           </label>
 
-          <input class="data-input__type" type="radio" name="type"
-           id="children-toy" value="children-toy">
+          <input class="data-input__type" type="radio" name="type" id="children-toy" value="children-toy">
           <label class="data-input__type-label" for="children-toy">
             Детская игрушка
           </label>
         </fieldset>
-      <!-- </section> -->
-      <!-- тут можно цвет через nth-child 2n сделать, и обрати внимание, что на мобиле он вовсе не grey -->
-      <section class="form-block form-block--grey">
-        <fieldset class="form-block__input-data form-block-wrapper">
+        <fieldset class="main-form__input-data wrapper">
           <legend>Цвет</legend>
-
-          <input class="data-input__color" type="checkbox" name="color-white"
-           id="color-white" checked>
+          <input class="data-input__color" type="checkbox" name="color-white" id="color-white" checked>
           <label class="data-input__color-label" for="color-white">
             Белый </label>
 
-          <input class="data-input__color" type="checkbox" name="color-grey"
-           id="color-grey" checked>
+          <input class="data-input__color" type="checkbox" name="color-grey" id="color-grey" checked>
           <label class="data-input__color-label" for="color-grey">
             Серый</label>
 
-          <input class="data-input__color" type="checkbox" name="color-tiffany"
-           id="color-tiffany">
+          <input class="data-input__color" type="checkbox" name="color-tiffany" id="color-tiffany">
           <label class="data-input__color-label" for="color-tiffany">
             &laquo;Тиффани&raquo;</label>
 
-          <input class="data-input__color" type="checkbox" name="color-black"
-           id="color-blac">
+          <input class="data-input__color" type="checkbox" name="color-black" id="color-blac">
           <label class="data-input__color-label" for="color-blac">
             Черный</label>
 
-          <input class="data-input__color" type="checkbox" name="color-pink"
-           id="color-pin">
+          <input class="data-input__color" type="checkbox" name="color-pink" id="color-pin">
           <label class="data-input__color-label" for="color-pin">
             Розовый</label>
 
-          <input class="data-input__color" type="checkbox" name="color-orange"
-           id="color-orange">
+          <input class="data-input__color" type="checkbox" name="color-orange" id="color-orange">
           <label class="data-input__color-label" for="color-orange">
             Оранжевый</label>
         </fieldset>
-      </section>
-      <section class="form-block">
-        <fieldset class="form-block__input-data form-block-wrapper">
+        <fieldset class="main-form__input-data wrapper">
           <legend>Фио</legend>
           <label class="data-input__full-name-label" for="name">
             Имя:
           </label>
-          <input class="data-input__full-name" type="text" id="name"
-           name="name" placeholder="Введите ваше имя*" required>
+          <input class="data-input__full-name" type="text" id="name" name="name" placeholder="Введите ваше имя*"
+            required>
 
           <label class="data-input__full-name-label" for="surname">
             Фамилия:
           </label>
-          <input class="data-input__full-name" type="text" id="surname"
-           name="surname" placeholder="Укажите фамилию*" required>
+          <input class="data-input__full-name" type="text" id="surname" name="surname" placeholder="Укажите фамилию*"
+            required>
 
           <label class="data-input__full-name-label" for="patronymic">
             Отчество:
           </label>
-          <input class="data-input__full-name" type="text" id="patronymic"
-           name="patronymic" placeholder="Отчество, если желаете">
+          <input class="data-input__full-name" type="text" id="patronymic" name="patronymic"
+            placeholder="Отчество, если желаете">
         </fieldset>
-      </section>
-      <div class="form-block form-block--grey">
-        <!-- это уже не филдсеты, а лейблы с классами филдсетов -->
-        <fieldset class="form-block__input-data form-block-wrapper">
-          <legend>Тел</legend>
-          <input class="data-input__phone" type="tel" name="tel"
-           pattern="\+7\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}"
+        <label class="form-block__input-data wrapper data-input__phone-label" for="tel">
+          Тел
+          <input class="data-input__phone" type="tel" name="tel" pattern="\+7\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}"
             placeholder="+7 XXX XX XX*" required>
-          <label class="data-input__phone-label" for="tel"></label>
-        </fieldset>
-        <fieldset class="form-block__input-data form-block-wrapper">
-          <legend>e-mail</legend>
-          <input class="data-input__e-mail" type="email" name="email"
-           placeholder="Ваш Email*" required>
-          <label class="data-input__e-mail-label" for="email"></label>
-        </fieldset>
-      </div>
-      <section class="form-block">
-        <fieldset class="form-block__input-data form-block-wrapper">
-          <legend>Доп</legend>
+        </label>
+        
+        <label class="form-block__input-data wrapper data-input__e-mail-label" for="email">
+          e-mail
+          <input class="data-input__e-mail" type="email" name="email" placeholder="Ваш Email*" required>
+        </label>
+
+        <label class="form-block__input-data wrapper  data-input__wishes-label" for="wishes">
+          Доп
           <textarea class="data-input__wishes" id="wishes" name="wishes" rows="5"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </fieldset>
-      </section>
-      <!-- ковычку забыл? -->
-      <div class=form-block-wrapper">
-        <p class="main-form__prompt">*Поля обязательные для заполнения</p>
-        <button class="form-block-btn btn" type="submit">Отправить заказ</button>
-      </div>
-    </form>
+        </label>
+
+        <div class="wrapper">
+          <p class="main-form__prompt">*Поля обязательные для заполнения</p>
+          <button class="form-block-btn btn" type="submit">Отправить заказ</button>
+        </div>
+      </form>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <div class="wrapper-block">
+    <div class="container">
       <a class="page-footer__logo" href="#">
         <img src="http://placehold.it" alt="mishka">
       </a>
